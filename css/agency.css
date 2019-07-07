@@ -510,7 +510,7 @@ header.masthead .intro-text .intro-heading {
   width: 190px;
   text-align: center;
   display: inline-block;
-  border: 1px solid;
+  border: 1px solid #6c757d;
   padding: 4px 10px 4px 10px;
   border-radius: 10px;
   margin: 2px 0px 4px 0px;
@@ -528,18 +528,18 @@ header.masthead .intro-text .intro-heading {
   width: 190px;
   text-align: center;
   display: inline-block;
-  border: 1px solid;
-  border-color: white;
+  border: 1px solid #6c757d;
   padding: 4px 10px 4px 10px;
   border-radius: 10px;
   margin: 2px 0px 4px 0px;
-  font-weight: 300;
+  font-weight: 100;
   color: #6c757d;
 }
 
 .timeline .timeline-dates a.pre-date:hover {
-  color: #fed136;
-  font-weight: 900;
+  background-color: #fed136;
+  color: white;
+  border-color: #fed136;
 }
 
 @media (min-width: 768px) {
