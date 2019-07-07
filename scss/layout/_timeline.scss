@@ -96,8 +96,9 @@
      > ul,
     > p {
       margin-bottom: 0;
+      }
     }
-  }
+
   .timeline-dates {
     margin: 10px 0px 0px 0px;
      > ul,
@@ -218,7 +219,6 @@
 
 // Styling for the team section
 #courses{
-  .timeline-body {
     .course-link {
       position: relative;
       display: block;
@@ -251,12 +251,13 @@
           }
           h3,
           h4 {
+            color: #fed136;
             margin: 0;
           }
         }
       }
     }
-  }
+
   * {
     z-index: 2;
   }

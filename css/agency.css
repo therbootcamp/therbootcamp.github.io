@@ -234,6 +234,7 @@ header.masthead .intro-text .intro-heading {
 #portfolio .portfolio-item {
   right: 0;
   margin: 0 0 15px;
+  text-align: center;
 }
 
 #portfolio .portfolio-item .portfolio-link {
@@ -615,14 +616,14 @@ header.masthead .intro-text .intro-heading {
   }
 }
 
-#courses .timeline-body .course-link {
+#courses .course-link {
   position: relative;
   display: block;
   margin: 0 auto;
   cursor: pointer;
 }
 
-#courses .timeline-body .course-link .course-hover {
+#courses .course-link .course-hover {
   border-radius: 0%;
   position: absolute;
   width: 100%;
@@ -633,11 +634,11 @@ header.masthead .intro-text .intro-heading {
   background: rgba(254, 209, 54, 0.9);
 }
 
-#courses .timeline-body .course-link .course-hover:hover {
+#courses .course-link .course-hover:hover {
   opacity: .8;
 }
 
-#courses .timeline-body .course-link .course-hover .course-hover-content {
+#courses .course-link .course-hover .course-hover-content {
   font-size: 20px;
   position: absolute;
   top: 50%;
@@ -648,12 +649,13 @@ header.masthead .intro-text .intro-heading {
   color: white;
 }
 
-#courses .timeline-body .course-link .course-hover .course-hover-content i {
+#courses .course-link .course-hover .course-hover-content i {
   margin-top: -12px;
 }
 
-#courses .timeline-body .course-link .course-hover .course-hover-content h3,
-#courses .timeline-body .course-link .course-hover .course-hover-content h4 {
+#courses .course-link .course-hover .course-hover-content h3,
+#courses .course-link .course-hover .course-hover-content h4 {
+  color: #fed136;
   margin: 0;
 }
 
