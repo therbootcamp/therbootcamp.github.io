@@ -1,10 +1,13 @@
 // Styling for the portfolio section
 #insights {
   .portfolio-item {
+    padding: 0px 40px 0px 40px;
     right: 0;
     margin: 0 0 15px;
     text-align: center;
-
+    img {
+      opacity: .9;
+    }
     .portfolio-link {
       position: relative;
       display: block;
@@ -99,7 +102,7 @@
       margin-bottom: 30px;
     }
     img {
-      max-width: 400px;
+      max-width: 300px;
       margin-bottom: 30px;
     }
     button {

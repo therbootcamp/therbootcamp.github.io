@@ -116,9 +116,9 @@
       font-weight: 900;
       color: #6c757d;
       &:hover{
-        background-color: #fed136;
+        background-color: $primary;
         color: white;
-        border-color: #fed136;
+        border-color: $primary;
       }
     }
     a.pre-date {
@@ -132,9 +132,9 @@
       font-weight: 100;
       color: #6c757d;
       &:hover{
-        background-color: #fed136;
+        background-color: $primary;
         color: white;
-        border-color: #fed136;
+        border-color: $primary;
       }
     }
   }
@@ -146,7 +146,7 @@
     }
     > li {
       min-height: 100px;
-      margin-bottom: 100px;
+      margin-bottom: 80px;
       .timeline-panel {
         float: left;
         width: 41%;
