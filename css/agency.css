@@ -325,7 +325,7 @@ header.masthead .intro-text .intro-heading {
 
 .portfolio-modal .modal-content h2 {
   font-size: 3em;
-  margin-bottom: 15px;
+  margin-bottom: 0px;
 }
 
 .portfolio-modal .modal-content p {
@@ -335,7 +335,7 @@ header.masthead .intro-text .intro-heading {
 .portfolio-modal .modal-content p.item-intro {
   font-size: 16px;
   font-style: italic;
-  margin: 20px 0 30px;
+  margin: 0px 0 40px;
   font-family: 'Droid Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
@@ -347,6 +347,51 @@ header.masthead .intro-text .intro-heading {
 .portfolio-modal .modal-content img {
   max-width: 300px;
   margin-bottom: 30px;
+  opacity: .9;
+}
+
+.portfolio-modal .modal-content a.pckg {
+  color: #6c757d;
+  decoration: none;
+  padding: .2rem .5rem;
+  margin: 0 .2rem;
+  font-size: 90%;
+  white-space: nowrap;
+  font-family: monospace;
+  background: #F1F1F1;
+  font-weight: 900;
+  border-radius: 4px;
+}
+
+.portfolio-modal .modal-content a.pckg:hover {
+  color: white;
+  background: #fed136;
+  font-weight: 900;
+  decoration: none;
+}
+
+.portfolio-modal .modal-content p.head {
+  text-align: left;
+  font-weight: 900;
+  padding-top: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+.portfolio-modal .modal-content p.entry {
+  text-align: left;
+  padding-top: 0px;
+  margin-top: 0px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.portfolio-modal .modal-content p.pckg {
+  padding-top: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
 }
 
 .portfolio-modal .modal-content button {
@@ -743,6 +788,23 @@ header.masthead .intro-text .intro-heading {
   margin-top: 0px;
   padding-bottom: 10px;
   margin-bottom: 10px;
+}
+
+.course-modal .modal-content table {
+  display: inline-table;
+  border: none;
+  width: 80%;
+}
+
+.course-modal .modal-content table td {
+  text-align: left;
+  vertical-align: top;
+}
+
+.course-modal .modal-content table td.elem {
+  text-align: right;
+  font-weight: 900;
+  padding-right: 20px;
 }
 
 .course-modal .modal-content p.pckg {

@@ -86,7 +86,7 @@
     text-align: center;
     h2 {
       font-size: 3em;
-      margin-bottom: 15px;
+      margin-bottom: 0px;
     }
     p {
       margin-bottom: 30px;
@@ -94,7 +94,7 @@
     p.item-intro {
       font-size: 16px;
       font-style: italic;
-      margin: 20px 0 30px;
+      margin: 0px 0 40px;
       @include serif-font;
     }
     ul.list-inline {
@@ -104,6 +104,46 @@
     img {
       max-width: 300px;
       margin-bottom: 30px;
+      opacity: .9;
+    }
+    a.pckg{
+      color:#6c757d;
+      decoration: none;
+      padding: .2rem .5rem;
+      margin: 0 .2rem;
+      font-size: 90%;
+      white-space: nowrap;
+      font-family: monospace;
+      background: #F1F1F1;
+      font-weight: 900;
+      border-radius: 4px;
+      &:hover {
+        color: white;
+        background: #fed136;
+        font-weight: 900;
+        decoration: none;
+      }
+    }
+    p.head {
+      text-align: left;
+      font-weight:  900;
+      padding-top:0px;
+      margin-top:0px;
+      padding-bottom:0px;
+      margin-bottom:0px;
+    }
+    p.entry{
+      text-align: left;
+      padding-top:0px;
+      margin-top:0px;
+      padding-bottom:10px;
+      margin-bottom:10px;
+    }
+    p.pckg{
+      padding-top:0px;
+      margin-top:0px;
+      padding-bottom:0px;
+      margin-bottom:0px;
     }
     button {
       cursor: pointer;
