@@ -1054,6 +1054,24 @@ li.timeline-inverted * {
   z-index: 2;
 }
 
+a.arxiv {
+  width: 190px;
+  text-align: center;
+  display: inline-block;
+  border: 1px solid #6c757d;
+  padding: 4px 10px 4px 10px;
+  border-radius: 10px;
+  margin: 2px 0px 4px 0px;
+  font-weight: 900;
+  color: #6c757d;
+}
+
+a.arxiv:hover {
+  background-color: #6ABA9A;
+  color: white;
+  border-color: #6ABA9A;
+}
+
 #team .team-member {
   margin-bottom: 50px;
   text-align: center;
