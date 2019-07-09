@@ -1159,7 +1159,7 @@
                 <p class="head" style="font-weight:400"><i>Tidyverse</i></p>
                 <p class="code">  # 1. Load tidyverse & data
   library(tidyverse) # makes all tidyverse packages available
-  titanic <- read_csv("https://osf.io/aupb4/download") # loads titanic data
+  titanic <- read_csv("https://osf.io/aupb4/download") # load data
 
   # 2. data transformation and aggregation using dplyr
   titanic <- titanic %>%
@@ -1187,13 +1187,13 @@
 
                 <p class="head" style="font-weight:400"><i>Classic R</i></p>
                   <p class="code">  # 1. Load data
-  titanic <- read_csv("https://osf.io/aupb4/download") # loads titanic data
+  titanic <- read_csv("https://osf.io/aupb4/download") # load data
 
   # 2. data transformation and aggregation using base R
   titanic$gender = titanic$Sex
   titanic$gender[titanic$gender == "male"] <- "Male"
   titanic$gender[titanic$gender == "female"] <- "Female"
-  titanic$age <- ifelse(titanic$Age >= 18, "Adult", "Child")
+  titanic$age <- ifelse(titanic$Age >= 18, "Adult", "Minor")
   titanic$class <- factor(titanic$PClass)
   titanic <- aggregate(titanic$Survived,
                        list(class = titanic$class,
@@ -1209,29 +1209,35 @@
            rgb(84, 188, 194, maxColorValue = 255))
   barplot(survival ~ gender + class,
           data = subset(titanic, age == "Adult"),
-          beside = TRUE, ylim = c(0, 1), ylab = "Proportion Survived",
-          xlab = "Class", main = "Titanic Survivors", las = 1,
+          beside = TRUE, ylim = c(0, 1),
+          ylab = "Proportion Survived", xlab = "Class",
+          main = "Titanic Survivors", las = 1,
           cex.lab = 1.5, cex.axis = 1.25, cex.main = 1.8,
           col = cols, border = NA)
   axis(side = 1, at = c(-1, 12))
-  rect(0.68, 1.01, 9, 1.08, col = "lightgrey", border = NA, xpd = TRUE)
+  rect(0.68, 1.01, 9, 1.08, col = "lightgrey", border = NA,
+       xpd = TRUE)
   text(5, 1.04, "Adult", xpd = TRUE, cex = 1.6)
   barplot(survival ~ gender + class,
           data = subset(titanic, age == "Child"),
-          beside = TRUE, ylim = c(0, 1), ylab = "Proportion Survived",
-          xlab = "Class", las = 1, cex.lab = 1.5, cex.axis = 1.25,
+          beside = TRUE, ylim = c(0, 1),
+          ylab = "Proportion Survived", xlab = "Class",
+          las = 1, cex.lab = 1.5, cex.axis = 1.25,
           col = cols, border = NA)
   axis(side = 1, at = c(-1, 12))
-  rect(0.68, 1.01, 9, 1.08, col = "lightgrey", border = NA, xpd = TRUE)
+  rect(0.68, 1.01, 9, 1.08, col = "lightgrey", border = NA,
+       xpd = TRUE)
   text(5, 1.04, "Minor", xpd = TRUE, cex = 1.6)
   plot.new()
   plot.window(xlim = c(0, 1), ylim = c(0, 1))
   par(mar = c(0, 0, 0, 0))
   points(c(-.5, -.5), c(.525, .445), pch = 15, col = cols,
          cex = 4, xpd = TRUE)
-  text(c(-.25, -.25), c(.525, .445), labels = c("Female", "Male"),
-       offset = 0, cex = 1.8, adj = 0)
-  text(-.55, .65, "Gender", cex = 2, font = 2, adj = 0, offset = 0)</p>
+  text(c(-.25, -.25), c(.525, .445),
+      labels = c("Female", "Male"),offset = 0,
+      cex = 1.8, adj = 0)
+  text(-.55, .65, "Gender", cex = 2, font = 2,
+       adj = 0, offset = 0)</p>
 
                 <img src="img/portfolio/tidyverse/titanic_base.png" style="max-width:600px;padding-top:10px"></img>
 
