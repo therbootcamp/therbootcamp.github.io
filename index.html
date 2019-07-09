@@ -23,32 +23,6 @@
   <!-- Custom styles for this template -->
   <link href="css/agency.min.css" rel="stylesheet">
 
-  <script>
-  $(document).ready(function() {
-    // Add smooth scrolling to all links
-    $("a").on('click', function(event) {
-
-      // Make sure this.hash has a value before overriding default behavior
-      if (this.hash !== "") {
-
-        // Store hash
-        var hash = this.hash;
-
-        // Using jQuery's animate() method to add smooth page scroll
-        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-        $('html, body').animate({
-          scrollTop: $(hash).offset().top
-        }, 2000, function() {
-
-          // Add hash (#) to URL when done scrolling (default click behavior)
-          window.location.hash = hash;
-        });
-        return false;
-      } // End if
-    });
-  });
-  </script>
-
 </head>
 
 <body id="page-top">
@@ -231,7 +205,7 @@
                 </div>
                 </a>
                 <div class="timeline-dates">
-                  <a class="date">Aug 24/25 | Register</a> <a class="pre-date">Nov 9/10 | Preregister</a>
+                  <a class="date" href="https://advancedstudies.unibas.ch/courses/course/machine-learning-with-r-208291#collapsible-heading-anmeldung">Aug 24/25 | Register</a> <a class="pre-date" href="mailto:therbootcamp@gmail.com?subject=Preregistration for R for Data Science&amp;body=I would like to preregister for the R Bootcamp 'R for Data Science' on November 9/10.">Nov 9/10 | Preregister</a>
                 </div>
               </div>
             </li>
@@ -255,7 +229,7 @@
                   </a>
                 </div>
                 <div class="timeline-dates">
-                  <a class="date">Sep 7/8 | Register</a>
+                  <a class="date" href="https://advancedstudies.unibas.ch/courses/course/statistics-with-r-233189">Sep 7/8 | Register</a>
                 </div>
               </div>
             </li>
@@ -278,13 +252,22 @@
                   </a>
                 </div>
                 <div class="timeline-dates">
-                  <a class="date">Sep 5/6 | Register</a>
+                  <a class="date" href="https://advancedstudies.unibas.ch/courses/course/machine-learning-with-r-208291">Oct 5/6 | Register</a>
                 </div>
               </div>
             </li>
             <li class="timeline-inverted">
               <div class="timeline-image">
-                <h4>See our<br>past<br>materials!</h4>
+                <a class="material-link" data-toggle="modal" href="#MLwR">
+                <div class="material-hover material-size">
+                  <div class="material-hover-content">
+                    <i class="fas fa-plus fa-3x"></i>
+                  </div>
+                </div>
+                <div class="material-size">
+                  See our<br>past<br>materials!
+                </div>
+                </a>
               </div>
             </li>
           </ul>
@@ -569,9 +552,16 @@
     </div>
   </footer>
 
-  <!-- Team Modals -->
+  <!--
+  TEAM TEAM TEAM TEAM TEAM TEAM TEAM TEAM TEAM TEAM TEAM TEAM TEAM TEAM TEAM
+  TEAM TEAM TEAM TEAM TEAM TEAM TEAM TEAM TEAM TEAM TEAM TEAM TEAM TEAM TEAM
+  TEAM TEAM TEAM TEAM TEAM TEAM TEAM TEAM TEAM TEAM TEAM TEAM TEAM TEAM TEAM
+  TEAM TEAM TEAM TEAM TEAM TEAM TEAM TEAM TEAM TEAM TEAM TEAM TEAM TEAM TEAM
+  -->
 
-  <!-- Modal 1: Dirk -->
+
+
+  <!-- DIRK DIRK DIRK DIRK DIRK DIRK DIRK DIRK DIRK DIRK DIRK DIRK DIRK -->
   <div class="team-modal modal fade" id="dirk" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -624,7 +614,7 @@
 
 
 
-  <!-- Modal 2: Markus -->
+  <!-- MARKUS MARKUS MARKUS MARKUS MARKUS MARKUS MARKUS MARKUS MARKUS MARKUS -->
   <div class="team-modal modal fade" id="markus" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -674,7 +664,7 @@
     </div>
   </div>
 
-  <!-- Modal 3: Michael -->
+  <!-- MICHAEL MICHAEL MICHAEL MICHAEL MICHAEL MICHAEL MICHAEL MICHAEL -->
   <div class="team-modal modal fade" id="michael" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -719,9 +709,15 @@
     </div>
   </div>
 
-  <!-- Course Modals -->
 
-  <!-- Modal 1: R4DS -->
+  <!--
+  COURSES COURSES COURSES COURSES COURSES COURSES COURSES COURSES COURSES
+  COURSES COURSES COURSES COURSES COURSES COURSES COURSES COURSES COURSES
+  COURSES COURSES COURSES COURSES COURSES COURSES COURSES COURSES COURSES
+  COURSES COURSES COURSES COURSES COURSES COURSES COURSES COURSES COURSES
+  -->
+
+  <!-- R4DS R4DS R4DS R4DS R4DS R4DS R4DS R4DS R4DS R4DS R4DS R4DS R4DS R4DS -->
   <div class="course-modal modal fade" id="R4DS" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -738,14 +734,12 @@
                 <img class="img-fluid d-block mx-auto" style="margin-bottom:20px" src="img/courses/1.png" alt="">
                 <h4  style="padding:0px;margin:0px">R for Data Science</h4>
                 <p class="item-intro text-muted">Learn Data Science with R from the ground up</p>
-
-                <a class="date" href="https://advancedstudies.unibas.ch/studienangebot/kurs/r-for-data-science-208287#collapsible-heading-anmeldung">Aug 24/25 | Register</a><br><a class="pre-date">Nov 9/10 | Preregister</a>
-
+                <a class="date" href="https://advancedstudies.unibas.ch/courses/course/r-for-data-science-208287#collapsible-heading-anmeldung">Aug 24/25 | Register</a><br><a class="pre-date">Nov 9/10 | Preregister</a>
                 <br><br>
-
                 <p class="head">Learning objective</p>
                 <p class="text-muted entry">This course teaches you the basics of the R language and the Rstudio environment, how to load data from various external files types, including .csv, .excel, .sav, how to clean, organise, and explore data, how to conduct basic statistical analyses and, finally, how to create striking visualisations.</p>
-
+                <p class="head">Prerequisites</p>
+                <p class="text-muted entry">There are no strict knowledge prerequisites for this course. Prior experience with a programming language (e.g.; R, Python, SAS), as well as an introductory course in statistics, is helpful but not necessary. Participants are requested to bring their own laptop with software installation rights.</p>
                 <p class="head">Details</p>
                 <table class="text-muted entry" cellspacing="0" cellpadding="0">
                   <tr>
@@ -754,7 +748,7 @@
                   </tr>
                   <tr>
                     <td class="elem">Location</td>
-                    <td>Advanced Studies, University of Basel, Steinengraben 22, 4051 Basel</td>
+                    <td><a href="https://advancedstudies.unibas.ch/courses/course/r-for-data-science-208287">Advanced Studies</a> - University of Basel <a href="https://www.google.com/maps/place/Advanced+Studies+der+Universit%C3%A4t+Basel/@47.5542123,7.5852195,15z/data=!4m5!3m4!1s0x0:0x1b8cefd9e51f9e3c!8m2!3d47.5542123!4d7.5852195"><i class="fas fa-map-marker-alt"></i></a></td>
                   </tr>
                   <tr>
                     <td class="elem">Class</td>
@@ -804,8 +798,7 @@
                     <td>Apero</td>
                   </tr>
                 </table>
-
-                <p class="head">Core packages</p>
+                <p class="head">Key packages</p>
                 <table class="text-muted entry" cellspacing="0" cellpadding="0">
                   <tr>
                     <td class="elem"><a class="pckg" href="http://cran.r-project.org/package=tidyverse">tidyverse</a></td>
@@ -823,6 +816,123 @@
                     <td class="elem"><a class="pckg" href="http://cran.r-project.org/package=ggplot2">ggplot2</a></td>
                     <td>Arguably the best visualization package across all programming language, not just R.</td>
                   </tr>
+                </table>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SWR SWR SWR SWR SWR SWR SWR SWR SWR SWR SWR SWR SWR SWR SWR SWR SWR -->
+  <div class="course-modal modal fade" id="SwR" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <img class="img-fluid d-block mx-auto" style="margin-bottom:20px" src="img/courses/2.png" alt="">
+                <h4  style="padding:0px;margin:0px">Statistics with R</h4>
+                <p class="item-intro text-muted">Learn to make data-driven decisions with R</p>
+
+                <a class="date" href="https://advancedstudies.unibas.ch/courses/course/statistics-with-r-233189#collapsible-heading-anmeldung">Sep 7/8 | Register</a>
+
+                <br><br>
+
+                <p class="head">Learning objective</p>
+                <p class="text-muted entry">This course teaches you the logic of common statistical procedures, how to implement various statistical analyses in R, including Regression, ANOVA, and robust tests, how to evaluate their assumptions, and how to interpret their results.</p>
+
+                <p class="head">Prerequisites</p>
+                <p class="text-muted entry">There are no strict knowledge prerequisites for this course. Prior experience with a programming language (e.g.; R, Python, SAS), as well as an introductory course in statistics, is helpful but not necessary. Participants are requested to bring their own laptop with software installation rights.</p>
+
+                <p class="head">Details</p>
+                <table class="text-muted entry" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td class="elem">Times</td>
+                    <td>2-day course: Sat-Sun, 9am-6pm</td>
+                  </tr>
+                  <tr>
+                    <td class="elem">Location</td>
+                    <td><a href="https://advancedstudies.unibas.ch/courses/course/statistics-with-r-233189">Advanced Studies</a> - University of Basel <a href="https://www.google.com/maps/place/Advanced+Studies+der+Universit%C3%A4t+Basel/@47.5542123,7.5852195,15z/data=!4m5!3m4!1s0x0:0x1b8cefd9e51f9e3c!8m2!3d47.5542123!4d7.5852195"><i class="fas fa-map-marker-alt"></i></a></td>
+                  </tr>
+                  <tr>
+                    <td class="elem">Class</td>
+                    <td>Max. 14 students</td>
+                  </tr>
+                  <tr>
+                    <td class="elem">Price</td>
+                    <td>990CHF</td>
+                  </tr>
+                </table>
+
+                <p class="head">Schedule & Materials <font style="font-size:10px">(Apr, 2019)</font></p>
+                <table class="text-muted entry schedule" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <th></th>
+                    <th>Day 1</th>
+                    <th>Day 2</th>
+                  </tr>
+                  <tr>
+                    <td class="time">0900</td>
+                    <td><a href="https://therbootcamp.github.io/SwR_2019Apr/_sessions/Welcome/Welcome.html">Welcome</a></td>
+                    <td><a href="https://therbootcamp.github.io/R4DS_2019Feb/_sessions/Recap/Recap.html">Recap</a></td>
+                  </tr>
+                  <tr>
+                    <td class="time">0930</td>
+                    <td><a href="https://therbootcamp.github.io/SwR_2019Apr/_sessions/Intro2Stats/Intro2Stats.html">Intro to R</a> &<br><a href="https://therbootcamp.github.io/SwR_2019Apr/_sessions/RforStats/RforStats.html">R for Stats</a></td>
+                    <td><a href="https://therbootcamp.github.io/SwR_2019Apr/_sessions/MixedModels/MixedModels.html">Hierarchical models</a> <a href="https://therbootcamp.github.io/R4DS_2019Feb/_sessions/Analysing/Analysing_practical.html">+</a></td>
+                  </tr>
+                  <tr>
+                    <td class="time">1200</td>
+                    <td>Lunch</td>
+                    <td >Lunch</td>
+                  </tr>
+                  <tr>
+                    <td class="time">1300</td>
+                    <td><a href="https://therbootcamp.github.io/SwR_2019Apr/_sessions/LinearModelsI/LinearModelsI.html">Linear models I</a> <a href="https://therbootcamp.github.io/SwR_2019Apr/_sessions/LinearModelsI/LinearModelsI_practical.html">+</a></td>
+                    <td><a href="https://therbootcamp.github.io/SwR_2019Apr/_sessions/RobustStats/RobustStats.html">Robust statistics</a> <a href="https://therbootcamp.github.io/SwR_2019Apr/_sessions/RobustStats/RobustStats_practical.html">+</a></td>
+                  </tr>
+                  <tr>
+                    <td class="time">1530</td>
+                    <td><a href="https://therbootcamp.github.io/SwR_2019Apr/_sessions/LinearModelsII/LinearModelsII.html">Linear models II</a> <a href="https://therbootcamp.github.io/SwR_2019Apr/_sessions/LinearModelsII/LinearModelsII_practical.html">+</a></td>
+                    <td><a href="https://therbootcamp.github.io/SwR_2019Apr/_sessions/NewStats/NewStats.html">New statistics</a> <a href="https://therbootcamp.github.io/SwR_2019Apr/_sessions/NewStats/NewStats_practical.html">+</a></td>
+                  </tr>
+                  <tr>
+                    <td class="time">1745</td>
+                    <td>Wrap-up</td>
+                    <td>Apero</td>
+                  </tr>
+                </table>
+
+                <p class="head">Key packages</p>
+                <table class="text-muted entry" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td class="elem"><a class="pckg" href="http://cran.r-project.org/package=lm">lm</a>, <a class="pckg" href="http://cran.r-project.org/package=glm">glm</a></td>
+                    <td>R's packages for (generalized) linear models aka regression models.</td>
+                  </tr>
+                  <tr>
+                    <td class="elem"><a class="pckg" href="http://cran.r-project.org/package=lme4">lme4</a></td>
+                    <td>Extends <a class="pckg" href="http://cran.r-project.org/package=lm">lm</a> to implement hierarchical models.</td>
+                  </tr>
+                  <tr>
+                    <td class="elem"><a class="pckg" href="http://cran.r-project.org/package=boot">boot</a></td>
+                    <td>Multi-purpose tool to conduct robust bootstrapping analyses.</td>
+                  </tr>
+                  <tr>
+                    <td class="elem"><a class="pckg" href="http://cran.r-project.org/package=pwr">pwr</a></td>
+                    <td>Conduct sample size calculation in R.</td>
+                  </tr>
 
                 </table>
 
@@ -838,8 +948,120 @@
     </div>
   </div>
 
+  <!-- MLWR MLWR MLWR MLWR MLWR MLWR MLWR MLWR MLWR MLWR MLWR MLWR MLWR MLWR -->
+  <div class="course-modal modal fade" id="MLwR" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <img class="img-fluid d-block mx-auto" style="margin-bottom:20px" src="img/courses/3.png" alt="">
+                <h4  style="padding:0px;margin:0px">Machine Learning with R</h4>
+                <p class="item-intro text-muted">Learn to build predictive algorithms with R</p>
 
-  <!-- Portfolio Modals -->
+                <a class="date" href="https://advancedstudies.unibas.ch/courses/course/machine-learning-with-r-208291#collapsible-heading-anmeldung">Oct 5/6 | Register</a>
+
+                <br><br>
+
+                <p class="head">Learning objective</p>
+                <p class="text-muted entry">This course teaches you the basic principles of machine learning, how to use R to implement various machine learning algorithms, including Regression models, Decision Trees, and  Random Forests, and how evaluate their performance for both regression and classification problems.</p>
+
+                <p class="head">Prerequisites</p>
+                <p class="text-muted entry">There are no strict knowledge prerequisites for this course. Prior experience with a programming language (e.g.; R, Python, SAS), as well as an introductory course in statistics, is helpful but not necessary. Participants are requested to bring their own laptop with software installation rights.</p>
+
+                <p class="head">Details</p>
+                <table class="text-muted entry" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td class="elem">Times</td>
+                    <td>2-day course: Sat-Sun, 9am-6pm</td>
+                  </tr>
+                  <tr>
+                    <td class="elem">Location</td>
+                    <td><a href="https://advancedstudies.unibas.ch/courses/course/machine-learning-with-r-208291">Advanced Studies</a> - University of Basel <a href="https://www.google.com/maps/place/Advanced+Studies+der+Universit%C3%A4t+Basel/@47.5542123,7.5852195,15z/data=!4m5!3m4!1s0x0:0x1b8cefd9e51f9e3c!8m2!3d47.5542123!4d7.5852195"><i class="fas fa-map-marker-alt"></i></a></td>
+                  </tr>
+                  <tr>
+                    <td class="elem">Class</td>
+                    <td>Max. 14 students</td>
+                  </tr>
+                  <tr>
+                    <td class="elem">Price</td>
+                    <td>990CHF</td>
+                  </tr>
+                </table>
+
+                <p class="head">Schedule & Materials <font style="font-size:10px">(May, 2019)</font></p>
+                <table class="text-muted entry schedule" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <th></th>
+                    <th>Day 1</th>
+                    <th>Day 2</th>
+                  </tr>
+                  <tr>
+                    <td class="time">0900</td>
+                    <td><a href="https://therbootcamp.github.io/ML_2019May/_sessions/Welcome/Welcome.html">Welcome</a></td>
+                    <td><a href="https://therbootcamp.github.io/ML_2019May/_sessions/Recap/Recap.html">Recap</a></td>
+                  </tr>
+                  <tr>
+                    <td class="time">0930</td>
+                    <td><a href="https://therbootcamp.github.io/ML_2019May/_sessions/WhatIsML/WhatIsML.html">What is ML?</a> &<br><a href="https://therbootcamp.github.io/ML_2019May/_sessions/RforML/RforML.html">R for ML</a></td>
+                    <td><a href="https://therbootcamp.github.io/ML_2019May/_sessions/Optimization/Optimization.html">Analysing</a> <a href="https://therbootcamp.github.io/ML_2019May/_sessions/Optimization/Optimization_practical.html">+</a></td>
+                  </tr>
+                  <tr>
+                    <td class="time">1200</td>
+                    <td>Lunch</td>
+                    <td >Lunch</td>
+                  </tr>
+                  <tr>
+                    <td class="time">1300</td>
+                    <td><a href="https://therbootcamp.github.io/ML_2019May/_sessions/Fitting/Fitting.html">Fitting</a> <a href="https://therbootcamp.github.io/ML_2019May/_sessions/Fitting/Fitting_practical.html">+</a></td>
+                    <td><a href="https://therbootcamp.github.io/ML_2019May/_sessions/Features/Features.html">Features</a> <a href="https://therbootcamp.github.io/ML_2019May/_sessions/Features/Features_practical.html">+</a></td>
+                  </tr>
+                  <tr>
+                    <td class="time">1530</td>
+                    <td><a href="https://therbootcamp.github.io/ML_2019May/_sessions/Prediction/Prediction.html">Prediction</a> <a href="https://therbootcamp.github.io/ML_2019May/_sessions/Prediction/Prediction_practical.html">+</a></td>
+                    <td><a href="https://therbootcamp.github.io/ML_2019May/_sessions/Models/Models.html">Case studies</a> <a href="https://therbootcamp.github.io/ML_2019May/_sessions/Models/Models_practical.html">+</a></td>
+                  </tr>
+                  <tr>
+                    <td class="time">1745</td>
+                    <td>Wrap-up</td>
+                    <td>Apero</td>
+                  </tr>
+                </table>
+
+                <p class="head">Key packages</p>
+                <table class="text-muted entry" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td class="elem"><a class="pckg" href="http://cran.r-project.org/package=caret">caret</a></td>
+                    <td>R's Swiss army knife for training and evaluating more than 200 machine learning algorithms.</td>
+                  </tr>
+                </table>
+
+
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--
+  PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO
+  PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO
+  PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO
+  PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO PORTFOLIO
+  -->
 
   <!-- Modal 1 -->
   <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">

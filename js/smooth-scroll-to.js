@@ -1,31 +1,23 @@
-/**
-* Smooth scrolling to anchor link under various conditions:
-* - from within the page where the target is (both on page load and after cliking on an anchor link on the same page)
-* - from a different the page where the target is
-**/
+// direct browser to top right away
+if (window.location.hash)
+    scroll(0,0);
+// takes care of some browsers issue
+setTimeout(function(){scroll(0,0);},1);
 
-$(document).ready(function() {
-    $('#link').on('click', function(e) {
-        smooth_scroll_to(this.hash, e);
-    });
+$(function(){
+//your current click function
+$('.scroll').on('click',function(e){
+    e.preventDefault();
+    $('html,body').animate({
+        scrollTop:$($(this).attr('href')).offset().top + 'px'
+    },5000,'swing');
 });
 
-$(window).on('load',function() {
-    smooth_scroll_to(window.location.hash);
-});
-
-function smooth_scroll_to(hash, e) {
-    if(hash === '') {
-        return false;
-    } else {
-        if($(hash).length > 0) {
-            if(typeof e !== 'undefined') {
-                e.preventDefault();
-                history.pushState(null, null, $(e.target).attr('href'));
-            }
-            $('html, body').animate({
-                scrollTop: $(hash).offset().top - $('#first-element').height() - $('#second-element').height()
-            }, 350);
-        }
+// if we have anchor on the url (calling from other page)
+if(window.location.hash){
+    // smooth scroll to the anchor id
+    $('html,body').animate({
+        scrollTop:$(window.location.hash).offset().top + 'px'
+      },5000,'swing');
     }
-}
+});
