@@ -289,9 +289,14 @@
     }
     p.item-intro {
       font-size: 16px;
-      font-style: italic;
-      margin: 20px 0 30px;
-      @include serif-font;
+      //font-style: italic;
+      margin: 0px 0 40px;
+      //@include serif-font;
+    }
+    ol {
+      padding-left: 20px;
+      //list-style-type: square;
+      text-align: left;
     }
     ul.list-inline {
       margin-top: 0;
@@ -315,18 +320,53 @@
       border-radius: 4px;
       &:hover {
         color: white;
-        background: #fed136;
+        background: $primary;
         font-weight: 900;
         decoration: none;
         }
     }
+    a.date {
+      width:190px;
+      text-align: center;
+      display: inline-block;
+      border:1px solid #6c757d;
+      padding: 4px 10px 4px 10px;
+      border-radius:10px;
+      margin: 2px 0px 4px 0px;
+      font-weight: 900;
+      color: #6c757d;
+      &:hover{
+        background-color: $primary;
+        color: white;
+        border-color: $primary;
+      }
+    }
+    a.pre-date {
+      width:190px;
+      text-align: center;
+      display: inline-block;
+      border:1px solid #6c757d;
+      padding: 4px 10px 4px 10px;
+      border-radius:10px;
+      margin: 2px 0px 4px 0px;
+      font-weight: 100;
+      color: #6c757d;
+      &:hover{
+        background-color: $primary;
+        color: white;
+        border-color: $primary;
+      }
+    }
     p.head {
+      text-align: left;
+      font-weight: 900;
       padding-top:10px;
       margin-top:10px;
       padding-bottom:0px;
       margin-bottom:0px;
     }
     p.entry{
+      text-align: left;
       padding-top:0px;
       margin-top:0px;
       padding-bottom:10px;
@@ -335,15 +375,37 @@
     table {
       display: inline-table;
       border: none;
-      width: 80%;
+      width: 100%;
       td {
         text-align: left;
         vertical-align: top;
+        padding-bottom: 4px;
       }
       td.elem {
-        text-align: right;
+        width: 20%;
+        text-align: left;
+        padding-right: 20px;
+        padding-bottom: 4px;
+      }
+    }
+    table.schedule {
+      display: inline-table;
+      border: none;
+      width: 60%;
+      margin-right: 40%;
+      td, th {
+        text-align: left;
+        vertical-align: top;
+        padding-bottom: 4px;
+      }
+      th {
         font-weight: 900;
-        padding-right: 20px
+      }
+      td.time {
+        width: 130px;
+        text-align: left;
+        padding-right: 20px;
+        padding-bottom: 4px;
       }
     }
     p.pckg{

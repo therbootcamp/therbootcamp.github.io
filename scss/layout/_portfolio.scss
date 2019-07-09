@@ -97,6 +97,9 @@
       margin: 0px 0 40px;
       @include serif-font;
     }
+    li {
+      align: left;
+    }
     ul.list-inline {
       margin-top: 0;
       margin-bottom: 30px;

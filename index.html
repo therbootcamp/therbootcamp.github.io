@@ -3,8 +3,6 @@
 
 <head>
 
-
-
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
@@ -24,6 +22,32 @@
 
   <!-- Custom styles for this template -->
   <link href="css/agency.min.css" rel="stylesheet">
+
+  <script>
+  $(document).ready(function() {
+    // Add smooth scrolling to all links
+    $("a").on('click', function(event) {
+
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+
+        // Store hash
+        var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 2000, function() {
+
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+        return false;
+      } // End if
+    });
+  });
+  </script>
 
 </head>
 
@@ -713,30 +737,93 @@
                 <!-- Project Details Go Here -->
                 <img class="img-fluid d-block mx-auto" style="margin-bottom:20px" src="img/courses/1.png" alt="">
                 <h4  style="padding:0px;margin:0px">R for Data Science</h4>
-                <p class="text-muted" style="margin-bottom:10px">Learn Data Science with R from the ground up.</p>
+                <p class="item-intro text-muted">Learn Data Science with R from the ground up</p>
+
+                <a class="date" href="https://advancedstudies.unibas.ch/studienangebot/kurs/r-for-data-science-208287#collapsible-heading-anmeldung">Aug 24/25 | Register</a><br><a class="pre-date">Nov 9/10 | Preregister</a>
+
+                <br><br>
+
+                <p class="head">Learning objective</p>
+                <p class="text-muted entry">This course teaches you the basics of the R language and the Rstudio environment, how to load data from various external files types, including .csv, .excel, .sav, how to clean, organise, and explore data, how to conduct basic statistical analyses and, finally, how to create striking visualisations.</p>
 
                 <p class="head">Details</p>
                 <table class="text-muted entry" cellspacing="0" cellpadding="0">
-                  <col width=30%>
-                  <col width=70%>
                   <tr>
                     <td class="elem">Times</td>
                     <td>2-day course: Sat-Sun, 9am-6pm</td>
                   </tr>
                   <tr>
-                    <td class="elem">Host</td>
-                    <td>Advanced Studies, University of Basel</td>
+                    <td class="elem">Location</td>
+                    <td>Advanced Studies, University of Basel, Steinengraben 22, 4051 Basel</td>
+                  </tr>
+                  <tr>
+                    <td class="elem">Class</td>
+                    <td>Max. 14 students</td>
+                  </tr>
+                  <tr>
+                    <td class="elem">Price</td>
+                    <td>990CHF</td>
                   </tr>
                 </table>
 
-                <p class="head">Key packages</p>
+                <p class="head">Schedule & Materials <font style="font-size:10px">(Feb, 2019)</font></p>
+                <table class="text-muted entry schedule" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <th></th>
+                    <th>Day 1</th>
+                    <th>Day 2</th>
+                  </tr>
+                  <tr>
+                    <td class="time">0900</td>
+                    <td><a href="https://therbootcamp.github.io/R4DS_2019Feb/_sessions/Welcome/Welcome.html">Welcome</a></td>
+                    <td><a href="https://therbootcamp.github.io/R4DS_2019Feb/_sessions/Recap/Recap.html">Recap</a></td>
+                  </tr>
+                  <tr>
+                    <td class="time">0930</td>
+                    <td><a href="https://therbootcamp.github.io/R4DS_2019Feb/_sessions/IntroToR/IntroToR.html">Intro to R</a></td>
+                    <td><a href="https://therbootcamp.github.io/R4DS_2019Feb/_sessions/Analysing/Analysing.html">Analysing</a> <a href="https://therbootcamp.github.io/R4DS_2019Feb/_sessions/Analysing/Analysing_practical.html">+</a></td>
+                  </tr>
+                  <tr>
+                    <td class="time">1200</td>
+                    <td>Lunch</td>
+                    <td >Lunch</td>
+                  </tr>
+                  <tr>
+                    <td class="time">1300</td>
+                    <td><a href="https://therbootcamp.github.io/R4DS_2019Feb/_sessions/Wrangling/Wrangling.html">Data</a> <a href="https://therbootcamp.github.io/R4DS_2019Feb/_sessions/Data/Data_practical.html">+</a></td>
+                    <td><a href="https://therbootcamp.github.io/R4DS_2019Feb/_sessions/Plotting/Plotting.html">Plotting</a> <a href="https://therbootcamp.github.io/R4DS_2019Feb/_sessions/Wrangling/Wrangling_practical.html">+</a></td>
+                  </tr>
+                  <tr>
+                    <td class="time">1530</td>
+                    <td><a href="https://therbootcamp.github.io/R4DS_2019Feb/_sessions/Wrangling/Wrangling.html">Wrangling</a> <a href="https://therbootcamp.github.io/R4DS_2019Feb/_sessions/Plotting/Plotting_practical.html">+</a></td>
+                    <td><a href="https://therbootcamp.github.io/R4DS_2019Feb/_sessions/CaseStudies/CaseStudies.html">Case studies</a>: <a href="https://therbootcamp.github.io/R4DS_2019Feb/_sessions/CaseStudies/Clinical_Data_Case_Study.html">I</a>, <a href="https://therbootcamp.github.io/R4DS_2019Feb/_sessions/CaseStudies/Financial_Data_Case_Study.html">II</a></td>
+                  </tr>
+                  <tr>
+                    <td class="time">1745</td>
+                    <td>Wrap-up</td>
+                    <td>Apero</td>
+                  </tr>
+                </table>
+
+                <p class="head">Core packages</p>
                 <table class="text-muted entry" cellspacing="0" cellpadding="0">
-                  <col width=30%>
-                  <col width=70%>
                   <tr>
                     <td class="elem"><a class="pckg" href="http://cran.r-project.org/package=tidyverse">tidyverse</a></td>
-                    <td>A collection of cutting-edge Data Science packages prominently including <a class="pckg" href="http://cran.r-project.org/package=dplyr">dplyr</a> and <a class="pckg" href="http://cran.r-project.org/package=ggplot2">ggplot2</a>.</td>
+                    <td>A collection of cutting-edge Data Science packages prominently including <a class="pckg" href="http://cran.r-project.org/package=readr">readr</a>, <a class="pckg" href="http://cran.r-project.org/package=dplyr">dplyr</a>, and <a class="pckg" href="http://cran.r-project.org/package=ggplot2">ggplot2</a>.</td>
                   </tr>
+                  <tr>
+                    <td class="elem"><a class="pckg" href="http://cran.r-project.org/package=readr">readr</a></td>
+                    <td>Convenient package for reading in text file formats such as .csv and .txt.</td>
+                  </tr>
+                  <tr>
+                    <td class="elem"><a class="pckg" href="http://cran.r-project.org/package=dplyr">dplyr</a></td>
+                    <td>R's go to data wrangling package for cleaning, organizing, and joining data sets.</td>
+                  </tr>
+                  <tr>
+                    <td class="elem"><a class="pckg" href="http://cran.r-project.org/package=ggplot2">ggplot2</a></td>
+                    <td>Arguably the best visualization package across all programming language, not just R.</td>
+                  </tr>
+
                 </table>
 
 
