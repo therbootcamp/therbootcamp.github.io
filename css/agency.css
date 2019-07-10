@@ -425,6 +425,12 @@ header.masthead .intro-text .intro-heading {
   white-space: pre;
 }
 
+.portfolio-modal .modal-content p.code_img {
+  text-align: left;
+  padding-left: 10px;
+  margin-bottom: 0px;
+}
+
 .portfolio-modal .modal-content code-inline {
   font-family: monospace;
   color: #6c757d;

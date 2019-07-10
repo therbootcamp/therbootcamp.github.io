@@ -152,6 +152,7 @@
           </div>
         </div>
 
+        <!---
         <div class="col-md-4 col-sm-6 portfolio-item">
           <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
             <div class="portfolio-hover">
@@ -166,9 +167,10 @@
             <p class="text-muted">created easily using <pckg>R Markdown</pckg></p>
           </div>
         </div>
+        --->
 
         <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+          <a class="portfolio-link" data-toggle="modal" href="#sentiment">
             <div class="portfolio-hover">
               <div class="portfolio-hover-content">
                 <i class="fas fa-plus fa-3x"></i>
@@ -1256,7 +1258,7 @@
 
 
   <!-- Modal 2 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="portfolio-modal modal fade" id="sentiment" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="close-modal" data-dismiss="modal">
@@ -1269,15 +1271,52 @@
             <div class="col-lg-8 mx-auto">
               <div class="modal-body">
                 <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Project Name</h2>
-                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/02-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                <ul class="list-inline">
-                  <li>Date: January 2017</li>
-                  <li>Client: Explore</li>
-                  <li>Category: Graphic Design</li>
-                </ul>
+                <img class="img-fluid d-block mx-auto" src="img/portfolio/emoji.png" alt="">
+                <h2 class="text-uppercase">Sentiment</h2>
+                <p class="item-intro text-muted">Analyse sentiment using <a class="pckg" href="https://www.tidytextmining.com/">tidytext</a></p>
+
+                <p class="text-muted entry"> Sentiment analysis is a powerful tool with diverse areas of application that allows one to assess the affective content of pieces of text. For example, say you are interested in the impact of a novel compaign targeted at improving your companies image. One way to track the success of your compaign would be to analyze the sentiment that customers express on social media posts or product reviews.</p>
+
+                <p class="head">R is great for natural language processing</p>
+                <p class="text-muted entry"> Turns out that R has a number of tidyverse-related packages that make carrying out such analyses surprisingly easy. The packages <a class="pckg" href="https://cran.r-project.org/package=xml2">xml2</a> and <a class="pckg" href="https://cran.r-project.org/package=rvest">rvest</a> help you pull any kind of information from the internet and, once text is imported into R, the <a class="pckg" href="https://cran.r-project.org/package=tidytext">tidytext</a> package allows you to very efficiently perform many natural langugage processing tasks including sentiment analysis.
+
+                <p class="head">Sentiment of Swiss companies</p>
+                <p class="text-muted entry">The example below illustrates the ease of conducting sentiment analysis of text available online. The analysis first downloads the English Wikipedia pages of the twelve highest-grossing Swiss companies. Then, in just five lines, the code computes the average sentiment of each company based on the words available in the respective articles.</p>
+
+                <p class="code">  # 0. load packages
+  require(tidyverse)
+  require(xml2)
+  require(rvest)
+  require(tidytext)
+
+  # 1. get website urls
+  companies <- c(
+    "Glencore", "Vitol", "Trafigura",
+    "Mercuria_Energy_Group", "Nestlé",
+    "Gunvor_(company)", "Hoffmann-La_Roche",
+    "Novartis", "ABB_(company)",
+    "Coop_(Switzerland)", "Migros",
+    "LafargeHolcim")
+  urls <- paste0("https://en.wikipedia.org/wiki/",
+                 companies)
+
+  # 2. read Wikipedia articles
+  texts <- map(urls, function(x){
+    x %>% read_html() %>%
+    html_node("body") %>%
+    html_text()})
+  texts<- tibble(company = companies,
+                 text = unlist(texts))</p>
+
+                <p class="code_img"><img src="img/portfolio/sentiment/texts.png" style="max-width:600px;padding-top:10px"></img></p>
+                <p class="code">  # 3. get sentiments using tidytext
+  sentiment <- texts %>%
+    unnest_tokens(word, text) %>%
+    inner_join(get_sentiments("afinn")) %>%
+    group_by(company) %>%
+    summarize(sentiment = mean(score))</p>
+                <p class="code_img"><img src="img/portfolio/sentiment/sentiment.png" style="align:left;max-width:600px;max-height:300px;padding-top:10px"></img></p>
+                <br><br>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                   <i class="fas fa-times"></i>
                   Close</button>
