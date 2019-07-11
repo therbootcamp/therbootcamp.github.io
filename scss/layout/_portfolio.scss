@@ -1,7 +1,8 @@
 // Styling for the portfolio section
 #insights {
   .portfolio-item {
-    padding: 0px 40px 0px 40px;
+    bottom: -40px;
+    padding: 0px 40px 40px 40px;
     right: 0;
     margin: 0 0 15px;
     text-align: center;
@@ -100,6 +101,9 @@
     max-width: 100vw;
   }
   .modal-content {
+    a {
+      font-weight: 700;
+    }
     padding: 100px 0;
     text-align: center;
     h2 {
