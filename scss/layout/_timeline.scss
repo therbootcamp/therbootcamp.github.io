@@ -532,6 +532,11 @@ li.timeline-inverted {
       margin: 0 auto;
       cursor: pointer;
       color: white;
+      .no-underline {
+        &:hover{
+        text-decoration: none;
+        }
+      }
       .material-hover {
         margin-left: -7px;
         border-radius: 50%;
