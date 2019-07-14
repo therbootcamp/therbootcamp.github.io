@@ -25,7 +25,7 @@ texts <- map(urls, function(x){
 texts<- tibble(company = companies, 
                text = unlist(texts)) 
 
-# 3. get sentiments
+# 3. get sentiments using tidytext
 sentiment <- texts %>% 
   unnest_tokens(word, text) %>%
   inner_join(get_sentiments("afinn")) %>%

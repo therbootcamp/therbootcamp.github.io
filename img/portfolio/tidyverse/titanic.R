@@ -32,7 +32,7 @@ g = ggplot(titanic, aes(class, survival, fill = gender)) +
        title = "Titanic Survivors") +
   facet_wrap(~ age) +
   theme_light()
-ggsave(filename = "titanic.png",device = 'png',width =6, height = 4,path = DIR,units = "in")
+ggsave(filename = "titanic.png",plot = g,device = 'png',width =6, height = 4,path = DIR,units = "in")
 
 
 titanic <- read_csv("https://osf.io/aupb4/download") # loads titanic data
