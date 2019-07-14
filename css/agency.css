@@ -256,7 +256,6 @@ header.masthead .intro-text .intro-heading {
   background: #F1F1F1;
   font-weight: 900;
   border-radius: 4px;
-  target: "_blank";
 }
 
 #insights .portfolio-item a.pckg:hover {
@@ -1130,7 +1129,6 @@ a.arxiv {
   margin: 2px 0px 4px 0px;
   font-weight: 900;
   color: #6c757d;
-  target: "_blank";
 }
 
 a.arxiv:hover {
