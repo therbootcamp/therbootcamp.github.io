@@ -1037,8 +1037,8 @@
                 <p class="head">Key packages</p>
                 <table class="text-muted entry" cellspacing="0" cellpadding="0">
                   <tr>
-                    <td class="elem"><a class="pckg" href="http://cran.r-project.org/package=lm">lm</a>, <a class="pckg" href="http://cran.r-project.org/package=glm">glm</a></td>
-                    <td>R's packages for (generalized) linear models aka regression models.</td>
+                    <td class="elem"><a class="pckg" href="http://cran.r-project.org/package=stats">stats</a></td>
+                    <td>Containing <code-inline>lm</code-inline> and <code-inline>glm</code-inline>, R's packages for (generalized) linear models aka regression models.</td>
                   </tr>
                   <tr>
                     <td class="elem"><a class="pckg" href="http://cran.r-project.org/package=lme4">lme4</a></td>
@@ -1288,7 +1288,7 @@
 
                 <p class="head" style="font-weight:400"><i>Classic R</i></p>
                   <p class="code">  # 1. Load data
-  titanic <- read_csv("https://osf.io/aupb4/download") # load data
+  titanic <- read.csv("https://osf.io/aupb4/download") # load data
 
   # 2. data transformation and aggregation using base R
   titanic$gender = titanic$Sex
@@ -1305,8 +1305,8 @@
 
   # 3. plot using base R
   layout(matrix(c(1,2,3), nrow = 1), width = c(.4,.4,.2))
-  par(mar = c(5.1, 4.1, 6.1,0))
-  cols = c(rgb(232, 125, 114, maxColorValue = 255),
+  par(mar <- c(5.1, 4.1, 6.1,0))
+  cols <- c(rgb(232, 125, 114, maxColorValue = 255),
            rgb(84, 188, 194, maxColorValue = 255))
   barplot(survival ~ gender + class,
           data = subset(titanic, age == "Adult"),
@@ -1444,18 +1444,18 @@
                 <!-- Project Details Go Here -->
                 <img class="img-fluid d-block mx-auto" src="img/portfolio/markdown.png" alt="">
                 <h2 class="text-uppercase">Dynamic Reports</h2>
-                <p class="item-intro text-muted">Analyse sentiment using <a class="pckg" href="https://www.tidytextmining.com/">tidytext</a></p>
+                <p class="item-intro text-muted">created  easily using <a class="pckg" href="https://rmarkdown.rstudio.com/">tidytext</a></p>
 
-                <p class="text-muted entry">The critical, final stage of any analysis is communication. In one way or another, the collected insights must find their way into a document or presentation, may for it be a periodical report or a research project. Oftentimes this achieved by transferring by hand the numerical results and figures into another software used for creating the report. Clearly, however, this would be unnecessarily tedious, inflexible, and prone to errors. That is, if you knew R Markdown.</p>
+                <p class="text-muted entry">The critical, final stage of any analysis is communication. In one way or another, the collected insights must find their way into a document or presentation, may for it be a periodical report or a research project. This achieved by transferring the numerical results and figures into another software used for creating the report by hand. Clearly, however, this is unnecessarily tedious, inflexible, and prone to errors. That is, if you knew R Markdown.</p>
 
                 <p class="head">What is R Markdown?</p>
-                <p class="text-muted entry"> R Markdown is an extension to Markdown, a lightweight markup language (https://en.wikipedia.org/wiki/Markdown). R Markdown provides you with a very simple syntax for creating and formatting documents that allows you to combine your R analysis code, the output that it produces, and plain text embedding the analysis. This means that when using R Markdown there is no more copy and pasting, everything is in one place.</p>
+                <p class="text-muted entry"> R Markdown is an extension to Markdown, a lightweight markup language (https://en.wikipedia.org/wiki/Markdown). R Markdown provides you with a very simple syntax for creating and formatting documents that allows you to combine your R analysis code, the output that it produces, and plain text surrounding analysis. This means that when using R Markdown there is no more copy and pasting, everything is in one place.</p>
 
                 <p class="head">Creating dynamic reports with R Markdown</p>
                 <p class="text-muted entry"> Using R Markdown has loads of advantages. The most important one is that your documents become reproducible and dynamic. When you have everything in one place, making changes to the analysis or using a different set of data becomes entirely hassle-free. All you need to do is to make these changes and then re-”knit” the document, which will automatically re-create your document with all changes incorporated. Another benefit is that you can be sure your document reflects with 100% accuracy the results of your analysis. Typos in any of the important numbers? Not possible.</p>
 
                 <p class="head">R Markdown is amazingly versatile</p>
-                <p class="text-muted entry"> We rely heavily on R Markdown to create the diverse materials for our Bootcamps. All slides used for our presentations are entirely created using R Markdown, and so are so are the documents that guide through the coding exercises. Both, we choose to generate as .html files so that our materials can be made accessible online. See, for instance, our slides on <a href="https://therbootcamp.github.io/ML_2019May/_sessions/WhatIsML/WhatIsML.html">What is Machine Learning?</a> or our exercise on <a href="https://therbootcamp.github.io/R4DS_2019Feb/_sessions/Wrangling/Wrangling_practical.html">Data Wrangling</a> (includes solutions). However, you can use R Markdown to generate many different types of formats including nicely formatted PDF or Word documents.</p>
+                <p class="text-muted entry"> We rely heavily on R Markdown to create the diverse materials for our Bootcamps. All slides used for our presentations are entirely created using R Markdown, and so are documents that guide through the coding exercises. Both elements we produce as .html files so that our materials can be made accessible online. See, for instance, our slides on <a href="https://therbootcamp.github.io/ML_2019May/_sessions/WhatIsML/WhatIsML.html">What is Machine Learning?</a> or our exercise on <a href="https://therbootcamp.github.io/R4DS_2019Feb/_sessions/Wrangling/Wrangling_practical.html">Data Wrangling</a> (includes solutions). However, you can use R Markdown to generate many different types of formats including nicely formatted PDF or Word documents.</p>
 
                 <p class="text-muted entry">Want to learn more about R Markdown, and reporting using R in general? Check out the freely available book <a href="https://bookdown.org/yihui/rmarkdown/">R Markdown - The Definitive Guide</a>, or join our course on Reporting with R, which we hope offer in the near future.</p>
                 <br><br>
@@ -1566,7 +1566,7 @@
                 Unless otherwise indicated, the Site and its contents are licensed under the Creative <a href="http://creativecommons.org/licenses/by/4.0/">Commons Attribution 4.0</a> licensing terms. If you are interested in using content on this size, please take a moment to read the full <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0</a> licensing terms.
 
                   <p align="center">
-                    <a href="http://creativecommons.org/licenses/by/4.0/">
+                    <a target="_blank" href="http://creativecommons.org/licenses/by/4.0/">
                       <img src="img/cc/cc.png">
                       <img src="img/cc/by.png">
                       <img src="img/cc/sa.png">

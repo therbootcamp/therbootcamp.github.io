@@ -256,6 +256,7 @@ header.masthead .intro-text .intro-heading {
   background: #F1F1F1;
   font-weight: 900;
   border-radius: 4px;
+  target: "_blank";
 }
 
 #insights .portfolio-item a.pckg:hover {
@@ -889,6 +890,7 @@ header.masthead .intro-text .intro-heading {
   background: #F1F1F1;
   font-weight: 900;
   border-radius: 4px;
+  target: "_blank";
 }
 
 .course-modal .modal-content a.pckg:hover, .material-modal .modal-content a.pckg:hover {
@@ -949,6 +951,12 @@ header.masthead .intro-text .intro-heading {
   margin-top: 0px;
   padding-bottom: 10px;
   margin-bottom: 10px;
+}
+
+.course-modal .modal-content code-inline, .material-modal .modal-content code-inline {
+  font-family: monospace;
+  color: #6c757d;
+  background-color: #f8f9fa;
 }
 
 .course-modal .modal-content table, .material-modal .modal-content table {
@@ -1122,6 +1130,7 @@ a.arxiv {
   margin: 2px 0px 4px 0px;
   font-weight: 900;
   color: #6c757d;
+  target: "_blank";
 }
 
 a.arxiv:hover {
