@@ -348,6 +348,7 @@ header.masthead .intro-text .intro-heading {
 
 .portfolio-modal .modal-content a {
   font-weight: 700;
+  data-dismiss: "modal";
 }
 
 .portfolio-modal .modal-content h2 {
