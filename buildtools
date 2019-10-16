@@ -1,0 +1,5 @@
+
+npm start
+
+sass --watch scss/agency.scss  css/agency.css
+sass --watch scss/agency.scss  css/agency.min.css --style compressed

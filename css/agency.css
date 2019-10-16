@@ -631,7 +631,7 @@ header.masthead .intro-text .intro-heading {
 }
 
 .timeline .timeline-dates a.date {
-  width: 240px;
+  width: 220px;
   text-align: center;
   display: inline-block;
   border: 1px solid #6c757d;
@@ -900,7 +900,7 @@ header.masthead .intro-text .intro-heading {
 }
 
 .course-modal .modal-content a.date, .material-modal .modal-content a.date {
-  width: 240px;
+  width: 220px;
   text-align: center;
   display: inline-block;
   border: 1px solid #6c757d;
