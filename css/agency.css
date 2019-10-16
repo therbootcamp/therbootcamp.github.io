@@ -631,7 +631,7 @@ header.masthead .intro-text .intro-heading {
 }
 
 .timeline .timeline-dates a.date {
-  width: 190px;
+  width: 240px;
   text-align: center;
   display: inline-block;
   border: 1px solid #6c757d;
@@ -649,7 +649,7 @@ header.masthead .intro-text .intro-heading {
 }
 
 .timeline .timeline-dates a.pre-date {
-  width: 190px;
+  width: 240px;
   text-align: center;
   display: inline-block;
   border: 1px solid #6c757d;
@@ -900,7 +900,7 @@ header.masthead .intro-text .intro-heading {
 }
 
 .course-modal .modal-content a.date, .material-modal .modal-content a.date {
-  width: 190px;
+  width: 240px;
   text-align: center;
   display: inline-block;
   border: 1px solid #6c757d;
@@ -918,7 +918,7 @@ header.masthead .intro-text .intro-heading {
 }
 
 .course-modal .modal-content a.pre-date, .material-modal .modal-content a.pre-date {
-  width: 190px;
+  width: 240px;
   text-align: center;
   display: inline-block;
   border: 1px solid #6c757d;
