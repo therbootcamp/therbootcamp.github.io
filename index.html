@@ -2,6 +2,30 @@
 <html lang="en">
 
 <head>
+  <script>
+    //var ml_text = "DE | Apr 3/4 | Anmelden<p style='border-top: 1px solid #6c757d;margin-top:4px;margin-bottom:-2px'>Online Kurs</p>";
+    //var ml_link = "https://advancedstudies.unibas.ch/studienangebot/kurs/maschinelles-lernen-mit-r-272008#collapsible-heading-anmeldung"
+    var i2r_text = "DE | Aug 28 | Voranmelden";
+    var i2r_link = "mailto:therbootcamp@gmail.com?subject=Voranmeldug für Einführung in die moderne Datenanalyse mit R&amp;body=Ich möchte mich für das nächste R Bootcamp 'Einführung in die moderne Datenanalyse mit R' voranmelden."
+    var i2r_font = "lighter";
+    var expl_text = "DE | Sep 4/5 | Voranmelden";
+    var expl_link = "mailto:therbootcamp@gmail.com?subject=Voranmeldug für Explorative Datenanalyse mit R&amp;body=Ich möchte mich für das nächste R Bootcamp 'Explorative Datenanalyse mit R' voranmelden."
+    var expl_font = "lighter";
+    var stat_text = "DE | Mai 8/9 | Anmelden<p style='border-top: 1px solid #6c757d;margin-top:4px;margin-bottom:-2px'>Online Kurs</p>";
+    var stat_link = "https://advancedstudies.unibas.ch/studienangebot/kurs/statistik-mit-r-233189#collapsible-heading-anmeldung"
+    var stat_font = "bolder";
+    var ml_text = "DE | Okt 23/24 | Voranmelden";
+    var ml_link = "mailto:therbootcamp@gmail.com?subject=Voranmeldug für Maschinelles Lernen mit R&amp;body=Ich möchte mich für das nächste R Bootcamp 'Maschinelles Lernen mit R' voranmelden."
+    var ml_font = "lighter";
+    var rep_text = "DE | Jun 5/6 | Anmelden";
+    var rep_link = "https://advancedstudies.unibas.ch/studienangebot/kurs/reporting-with-r-283873#collapsible-heading-anmeldung"
+    var rep_font = "bolder";
+
+    // running link
+    var run_link = "https://therbootcamp.github.io/ML_2020Apr/"
+    var run_style = '' // margin-bottom:0px;
+    var run_style2 = 'none' // ''
+  </script>
 
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -97,8 +121,7 @@
     <div class="container">
       <div class="intro-text">
         <div class="intro-lead-in">Lerne Data Science mit R</div>
-        <!---<div class="intro-heading text-uppercase">The R Bootcamp</div>--->
-        <div class="intro-heading text-uppercase" style='margin-bottom:0px;'>The R Bootcamp<br><a href="https://therbootcamp.github.io/ML_2020Apr/"><font style="font-size:40%;line-height:50px;color:#EA4B68;vertical-align: text-top;text-transform: lowercase;">...running...</font></a></div>
+        <div class="intro-heading text-uppercase" id="run">The R Bootcamp<br><a id="run2" href="https://therbootcamp.github.io/ML_2020Apr/"><font id="run3" style="font-size:40%;line-height:50px;color:#EA4B68;vertical-align: text-top;text-transform: lowercase;">...running...</font></a></div>
         <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Mehr erfahren</a>
       </div>
     </div>
@@ -194,9 +217,7 @@
                 </div>
                 </a>
                 <div class="timeline-dates">
-                  <!---<a class="date" href="https://advancedstudies.unibas.ch/studienangebot/kurs/einfuehrung-in-die-moderne-datenanalyse-mit-r-272005#collapsible-heading-anmeldung">DE | Mär 11 | Anmelden</a><br>--->
-                  <a class="pre-date" href="mailto:therbootcamp@gmail.com?subject=Voranmeldug für Einführung in die moderne Datenanalyse mit R&amp;body=Ich möchte mich für das nächste R Bootcamp 'Einführung in die moderne Datenanalyse mit R' am 28. August voranmelden.">DE | Aug 28 | Voranmelden</a><br>
-                  <!---<a class="pre-date" href="mailto:therbootcamp@gmail.com?subject=Voranmeldug für Einführung in die moderne Datenanalyse mit R&amp;body=Ich möchte mich für das nächste R Bootcamp 'Einführung in die moderne Datenanalyse mit R' am 7. Februar  voranmelden.">DE | Feb 7 | Voranmelden</a>--->
+                  <a class="date" id="i2r"></a><br>
                 </div>
               </div>
             </li>
@@ -224,8 +245,7 @@
                 </div>
                 </a>
                 <div class="timeline-dates">
-                  <!---<a class="date" href="https://advancedstudies.unibas.ch/studienangebot/kurs/explorative-datenanalyse-mit-r-272006#collapsible-heading-anmeldung">DE | Feb 14/15 | Anmelden</a>--->
-                  <a class="pre-date" href="mailto:therbootcamp@gmail.com?subject=Voranmeldug für Explorative Datenanalyse mit R&amp;body=Ich möchte mich für das nächste R Bootcamp 'Explorative Datenanalyse mit R' voranmelden.">DE | Sep 4/5 | Voranmelden</a>
+                  <a class="date" id="expl"></a>
                 </div>
               </div>
             </li>
@@ -251,8 +271,7 @@
                   </a>
                 </div>
                 <div class="timeline-dates">
-                  <a class="date" href="https://advancedstudies.unibas.ch/studienangebot/kurs/statistik-mit-r-233189#collapsible-heading-anmeldung">DE | Mai 8/9 | Anmelden<p style="border-top: 1px solid #6c757d;margin-top:4px;margin-bottom:-2px">Online Kurs</p></a>
-                  <!---<a class="pre-date" href="mailto:therbootcamp@gmail.com?subject=Voranmeldug für Statistik mit R&amp;body=Ich möchte mich für das nächste R Bootcamp 'Statistik mit R' voranmelden.">DE | Mär 20/21 | Voranmelden</a>--->
+                  <a class="date" id="stat"></a>
                 </div>
               </div>
             </li>
@@ -277,8 +296,7 @@
                   </a>
                 </div>
                 <div class="timeline-dates">
-                  <a class="date" href="https://advancedstudies.unibas.ch/studienangebot/kurs/maschinelles-lernen-mit-r-272008#collapsible-heading-anmeldung">DE | Apr 3/4 | Anmelden<p style="border-top: 1px solid #6c757d;margin-top:4px;margin-bottom:-2px">Online Kurs</p></a>
-                  <!---<a class="pre-date" href="mailto:therbootcamp@gmail.com?subject=Voranmeldug für Maschinelles Lernen mit R&amp;body=Ich möchte mich für das nächste R Bootcamp 'Maschinelles Lernen mit R' voranmelden.">DE | Apr 3/4 | Voranmelden</a>--->
+                  <a class="date" id="ml">a</a>
                 </div>
               </div>
             </li>
@@ -306,8 +324,7 @@
                 </div>
                 </a>
                 <div class="timeline-dates">
-                  <a class="date" href="https://advancedstudies.unibas.ch/studienangebot/kurs/reporting-with-r-283873#collapsible-heading-anmeldung">DE | Jun 5/6 | Anmelden</a>
-                  <!---<a class="pre-date" href="mailto:therbootcamp@gmail.com?subject=Voranmeldug für Explorative Datenanalyse mit R&amp;body=Ich möchte mich für das nächste R Bootcamp 'Explorative Datenanalyse mit R' voranmelden.">DE | Feb 14/15 | Voranmelden</a>--->
+                  <a class="date" id="rep" ></a>
                 </div>
               </div>
             </li>
@@ -848,9 +865,7 @@
                 <img class="img-fluid d-block mx-auto" style="margin-bottom:20px" src="img/courses/0.png" alt="">
                 <h4  style="padding:0px;margin:0px">Einführung in die moderne Datenanalyse mit R</h4>
                 <p class="item-intro text-muted">Lerne Data Science von Grund auf</p>
-                <!---<a class="date" href="https://advancedstudies.unibas.ch/studienangebot/kurs/einfuehrung-in-die-moderne-datenanalyse-mit-r-272005#collapsible-heading-anmeldung">DE | Mär 11 | Anmelden</a><br>--->
-                <!---<a class="date" href="https://advancedstudies.unibas.ch/studienangebot/kurs/einfuehrung-in-die-moderne-datenanalyse-mit-r-272005#collapsible-heading-anmeldung">DE | Feb 7 | Anmelden</a><br>--->
-                <a class="pre-date" href="mailto:therbootcamp@gmail.com?subject=Voranmeldug für Einführung in die moderne Datenanalyse mit R&amp;body=Ich möchte mich für das nächste R Bootcamp 'Einführung in die moderne Datenanalyse mit R' am 28. August voranmelden.">DE | Aug 28 | Voranmelden</a>
+                <a class="date" id="i2r2"></a>
                 <br><br>
                 <p class="head">Beschreibung</p>
                 <p class="text-muted entry">Daten sind das Gold des 21. Jahrhunderts. Wer Zugang zu Daten hat und sie zu nutzen weiss, kann beispielsweise den wissenschaftlichen und technologischen Fortschritt im Gesundheitswesen vorantreiben oder sich durch intelligentes Marketing kritische Wettbewerbsvorteile sichern. Egal welches Ziel das Ihre ist, ob Sie im Management oder in der Entwicklung arbeiten, Expertise im Bereich der modernen Datenanalyse wird zunehmend zum entscheidenden Faktor. Dieser Nachmittagskurs ermöglicht Ihnen den Einstieg in die Welt von Data Science und Big Data mittels der offenen Programmiersprache R, welche speziell für den Zweck von Data Analytics entwickelt wurde und zu den gefragtesten Tools in diesem Bereich zählt. Sie lernen die Grundlagen der Sprache kennen und werden in interaktiven Elementen an die eigenständige Umsetzung herangeführt. Am Schluss erfahren Sie wie Sie Ihre Reise in die Welt der modernen Datenanalyse fortsetzen können.</p>
@@ -968,8 +983,7 @@
                 <img class="img-fluid d-block mx-auto" style="margin-bottom:20px" src="img/courses/1.png" alt="">
                 <h4  style="padding:0px;margin:0px">Explorative Datenanalyse mit R</h4>
                 <p class="item-intro text-muted">Exploriere und visualisiere Daten mit R</p>
-                <!---<a class="date" href="https://advancedstudies.unibas.ch/studienangebot/kurs/explorative-datenanalyse-mit-r-272006#collapsible-heading-anmeldung">DE | Feb 14/15 | Anmelden</a>--->
-                <a class="pre-date" href="mailto:therbootcamp@gmail.com?subject=Voranmeldug für Explorative Datenanalyse mit R&amp;body=Ich möchte mich für das nächste R Bootcamp 'Explorative Datenanalyse mit R' voranmelden.">DE | tba | Voranmelden</a>
+                <a class="pre-date" id="expl2"></a>
                 <br><br>
                 <p class="head">Beschreibung</p>
                 <p class="text-muted entry">Jedes datengestützte Projekt beginnt mit der Datenaufbereitung und -exploration. Von diesem ebenso aufwendigen wie bedeutendem Projektabschnitt hängt alles Folgende ab. Er umfasst das Bereinigen und Verknüpfen von Datensätzen aus verschiedenen Quellen und die Visualisierung der darin enthaltenen Zusammenhänge. Kaum ein Werkzeug eignet sich für diese Aufgaben so gut wie die Programmiersprache R. An diesem vollgepackten Wochenende lernen Sie, wie Sie alle Elemente der Datenaufbereitung und -exploration mit R durchführen können. Sie lernen, wie Sie Daten von der Festplatte oder aus dem Internet laden, wie sie Daten bereinigen und organisieren, wie sie einfache deskriptive Analysen durchführen und, nicht zuletzt, wie Sie ästhetisch ansprechende, publikationsreife Visualisierungen erstellen.</p>
@@ -1086,10 +1100,7 @@
                 <img class="img-fluid d-block mx-auto" style="margin-bottom:20px" src="img/courses/2.png" alt="">
                 <h4  style="padding:0px;margin:0px">Statistik mit R</h4>
                 <p class="item-intro text-muted">Treffen Sie datenbasierte Entscheidungen mit R</p>
-
-                <a class="date" href="https://advancedstudies.unibas.ch/studienangebot/kurs/statistik-mit-r-233189#collapsible-heading-anmeldung">DE | Mai 8/9 | Anmelden<p style="border-top: 1px solid #6c757d;margin-top:4px;margin-bottom:-2px">Online Kurs</p></a>
-                <!---<a class="pre-date" href="mailto:therbootcamp@gmail.com?subject=Voranmeldug für Statistik mit R&amp;body=Ich möchte mich für das nächste R Bootcamp 'Statistik mit R' voranmelden.">DE | Mär 20/21 | Voranmelden</a>--->
-
+                <a class="date" id="stat2"></a>
                 <br><br>
 
                 <p class="head">Beschreibung</p>
@@ -1215,10 +1226,7 @@
                 <img class="img-fluid d-block mx-auto" style="margin-bottom:20px" src="img/courses/3.png" alt="">
                 <h4  style="padding:0px;margin:0px">Maschinelles Lernen mit R</h4>
                 <p class="item-intro text-muted">Lernen Sie prädiktive Algorithmen mit R zu erstellen.</p>
-
-                <a class="date" href="https://advancedstudies.unibas.ch/studienangebot/kurs/maschinelles-lernen-mit-r-272008#collapsible-heading-anmeldung">DE | Apr 3/4 | Anmelden<p style="border-top: 1px solid #6c757d;margin-top:4px;margin-bottom:-2px">Online Kurs</p></a>
-                <!---<a class="pre-date" href="mailto:therbootcamp@gmail.com?subject=Voranmeldug für Maschinelles Lernen mit R&amp;body=Ich möchte mich für das nächste R Bootcamp 'Maschinelles Lernen mit R' voranmelden.">DE | Apr 3/4 | Voranmelden</a>--->
-
+                <a class="date" id="ml2"></a>
                 <br><br>
 
                 <p class="head">Beschreibung</p>
@@ -1331,10 +1339,7 @@
                 <img class="img-fluid d-block mx-auto" style="margin-bottom:20px" src="img/courses/4.png" alt="">
                 <h4  style="padding:0px;margin:0px">Reporting mit R</h4>
                 <p class="item-intro text-muted">Lernen Sie dynamische, interaktive Berichte mit R zu erstellen.</p>
-
-                <a class="date" href="https://advancedstudies.unibas.ch/studienangebot/kurs/reporting-with-r-283873#collapsible-heading-anmeldung">DE | Jun 5/6 | Anmelden</a>
-                <!---<a class="pre-date" href="mailto:therbootcamp@gmail.com?subject=Voranmeldug für Maschinelles Lernen mit R&amp;body=Ich möchte mich für das nächste R Bootcamp 'Maschinelles Lernen mit R' voranmelden.">DE | Apr 3/4 | Voranmelden</a>--->
-
+                <a class="date" id="rep2"></a>
                 <br><br>
 
                 <p class="head">Beschreibung</p>
@@ -1979,6 +1984,40 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/agency.min.js"></script>
+
+  <!-- COURSE LINKS COURSE LINKS COURSE LINKS COURSE LINKS-->
+  <script>
+    var ir = document.getElementById("i2r");
+    var ir2 = document.getElementById("i2r2");
+    i2r.innerHTML = i2r2.innerHTML = i2r_text;
+    i2r.href = i2r2.href = i2r_link;
+    i2r.style.fontWeight = i2r2.style.fontWeight = i2r_font;
+    var expl = document.getElementById("expl");
+    var expl2 = document.getElementById("expl2");
+    expl.innerHTML = expl2.innerHTML = expl_text;
+    expl.href = expl2.href = expl_link;
+    expl.style.fontWeight = expl2.style.fontWeight = expl_font;
+    var stat = document.getElementById("stat");
+    var stat2 = document.getElementById("stat2");
+    stat.innerHTML = stat2.innerHTML = stat_text;
+    stat.href = stat2.href = stat_link;
+    stat.style.fontWeight = stat2.style.fontWeight = stat_font;
+    var ml = document.getElementById("ml")
+    var ml2 = document.getElementById("ml2");
+    ml.innerHTML = ml2.innerHTML = ml_text;
+    ml.href = ml2.href = ml_link;
+    ml.style.fontWeight = ml2.style.fontWeight = ml_font;
+    var rep = document.getElementById("rep");
+    var rep2 = document.getElementById("rep2");
+    rep.innerHTML = rep2.innerHTML = rep_text;
+    rep.href = rep2.href = rep_link;
+    rep.style.fontWeight = rep2.style.fontWeight = rep_font;
+
+    // running link
+    document.getElementById("run").style = run_style;
+    document.getElementById("run2").href = run_link;
+    document.getElementById("run3").style.display = run_style2;
+  </script>
 
 </body>
 
