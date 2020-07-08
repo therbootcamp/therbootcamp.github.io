@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script>
+    //var ml_text = "DE | Apr 3/4 | Anmelden<p style='border-top: 1px solid #6c757d;margin-top:4px;margin-bottom:-2px'>Online Kurs</p>";
+    //var ml_link = "https://advancedstudies.unibas.ch/studienangebot/kurs/maschinelles-lernen-mit-r-272008#collapsible-heading-anmeldung"
+    //var expl_link = "mailto:therbootcamp@gmail.com?subject=Voranmeldug für Explorative Datenanalyse mit R&amp;body=Ich möchte mich für das nächste R Bootcamp 'Explorative Datenanalyse mit R' voranmelden."
+    var i2r_text = "DE | Aug 28 | Anmelden";
+    var i2r_link = "https://advancedstudies.unibas.ch/studienangebot/kurs/einfuehrung-in-die-moderne-datenanalyse-mit-r-272005#collapsible-heading-anmeldung"
+    var i2r_font = "bolder"; //lighter
+    var expl_text = "DE | Sep 4/5 | Anmelden";
+    var expl_link = "https://advancedstudies.unibas.ch/studienangebot/kurs/explorative-datenanalyse-mit-r-272006#collapsible-heading-anmeldung"
+    var expl_font = "bolder";
+    var stat_text = "DE | Sep 25/26 | Anmelden";
+    var stat_link = "https://advancedstudies.unibas.ch/studienangebot/kurs/statistik-mit-r-233189#collapsible-heading-anmeldung"
+    var stat_font = "bolder";
+    var ml_text = "DE | Okt 23/24 | Anmelden";
+    var ml_link = "https://advancedstudies.unibas.ch/studienangebot/kurs/maschinelles-lernen-mit-r-272008#collapsible-heading-anmeldung"
+    var ml_font = "bolder";
+    var rep_text = "DE | tba | Voranmelden<p style='border-top: 1px solid #6c757d;margin-top:4px;margin-bottom:-2px'>Online Kurs</p>";
+    var rep_link = "mailto:therbootcamp@gmail.com?subject=Voranmeldug für Reporting mit R&amp;body=Ich möchte mich für das nächste R Bootcamp 'Reporting mit R' voranmelden."
+    var rep_font = "lighter";
+
+    // running link
+    var run_link = "https://therbootcamp.github.io/RmR_2020Jun/"
+    var run_style = '' // margin-bottom:0px; // ''
+    var run_style2 = 'none' // '' // 'none'
+  </script>
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-MTX32PL');</script>
+  <!-- End Google Tag Manager -->
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>The R Bootcamp - Lerne Data Science mit R</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="css/agency.min.css" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="/fav/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/fav/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/fav/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/fav/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/fav/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/fav/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/fav/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/fav/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/fav/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/fav/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/fav/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/fav/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/fav/favicon-16x16.png">
+  <link rel="manifest" href="/fav/manifest.json">
+
+  <!--- Flags --->
+  <link rel="stylesheet" type="text/css" href="//github.com/downloads/lafeber/world-flags-sprite/flags32.css">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MTX32PL"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav" style="background-color: #212529">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">The R Bootcamp</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive" >
+        <ul class="navbar-nav text-uppercase ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#services">We Teach R</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#courses">Kurse</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#testimonials">Testimonials</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#team">Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">Kontakt</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="https://therbootcamp.github.io/en">🇬🇧</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Services -->
+  <section class="page-section bg-light" id="services" style="padding: 200px 100px 100px 100px">
+  </div>
+      <div id="myCarousel" class="carousel slide container" data-ride="carousel" style="height:400px">
+          <ol class="carousel-indicators" style="bottom:-50px">
+              <li data-target="#myCarousel" data-slide-to="0" class="active" style="background-color:#6c757d"></li>
+              <li data-target="#myCarousel" data-slide-to="1" style="background-color:#6c757d"></li>
+              <li data-target="#myCarousel" data-slide-to="2" style="background-color:#6c757d"></li>
+              <li data-target="#myCarousel" data-slide-to="3" style="background-color:#6c757d"></li>
+              <li data-target="#myCarousel" data-slide-to="4" style="background-color:#6c757d"></li>
+              <li data-target="#myCarousel" data-slide-to="5" style="background-color:#6c757d"></li>
+              <li data-target="#myCarousel" data-slide-to="6" style="background-color:#6c757d"></li>
+          </ol>
+          <div class="carousel-inner col-lg-12 text-center" style="padding-bottom:100px;font-size:1em">
+             <h2 class="section-heading text-uppercase" style="margin-bottom:40px">Was Teilnehmer sagen</h2>
+             <div class="carousel-item active">
+                 <p class="section-subheading text-muted">"Vielen Dank für den hervorragenden Kurs, ich habe wirklich viel gelernt. Die Materialien waren super nützlich und die Beispiele wirklich interessant. Außerdem wart ihr alle fantastisch, super hilfsbereit, engagiert und die Atmosphäre war wirklich anregend."</p>
+                 <br><p class="text-muted"><b>BRUNO</b>, Head of Clinical Development</p>
+             </div>
+              <div class="carousel-item">
+                  <p class="section-subheading text-muted">"Ein perfekter Kurs, für jeden der oder die ein gutes Verständnis für das maschinelle Lernen und seine Anwendung in R erlangen möchten. Der Kurs behandelt die wichtigsten Themen des maschinellen Lernens und ist sehr gut strukturiert. Am Ende werden Sie in der Lage sein, effektive maschinelle Lernmodelle zu erstellen, zu bewerten und zu optimieren. Die Dozenten sind begeistert vom Thema und haben alles auf sehr verständliche Weise erklärt."</p>
+                  <br><p class="text-muted"><b>FREDERIK</b>, Senior consultant</p>
+              </div>
+              <div class="carousel-item">
+                  <p class="section-subheading text-muted">"Ihr verdient alle Komplimente: für die Präsentation, das Training, eure Hilfe und nicht zuletzt für eure freundliche Art. Der Kurs lag über meinen Erwartungen! Das präsentierte Material war praxisnah und aktuell!"</p>
+                  <br><p class="text-muted"><b>STEFAN</b>, Senior Risk Modeller & Researcher</p>
+              </div>
+              <div class="carousel-item">
+                  <p class="section-subheading text-muted">"Ich habe von den Grundlagen bis hin zu wirklich coolen Dingen wie interaktiven Plots gelernt. Gleich nach dem Bootcamp entschied ich mich, komplett auf R umzusteigen. Wirklich tolles Bootcamp!"</p>
+                  <br><p class="text-muted"><b>EDGAR</b>, Associate Professor</p>
+              </div>
+              <div class="carousel-item">
+                  <p class="section-subheading text-muted" >"Jeder Teilnehmer wird etwas für sie oder ihn relevantes gefunden haben, sei es Statistik, Visualisierung, Präsentation oder Web-Applikation. Es hat mich sicherlich dazu gebracht, meinen Computer nehmen zu wollen und sofort loszulegen!"</p>
+                  <br><p class="text-muted"><b>JOHAN</b>, Analyst</p>
+              </div>
+              <div class="carousel-item">
+                  <p class="section-subheading text-muted">"Lernen R im The R Bootcamp hat mir das Gefühl gegeben [...], in der sich wandelnden Finanzindustrie relevant zu bleiben."</p>
+                  <br><p class="text-muted"><b>IRENA</b>, Credit Officer</p>
+              </div>
+              <div class="carousel-item">
+                  <p class="section-subheading text-muted">"Ich hatte keine Programmiererfahrung, aber mit dem R Bootcamp (nach nur einem halbem Tag!) wurde R auf eine lockere und bequeme Art für mich zugänglich gemacht. Ich freue mich auf die nächsten Schritte mit R und R Bootcamp."</p>
+                  <br><p class="text-muted"><b>SARAH</b>, Wissenschaftliche Mitarbeiterin, Pharma</p>
+              </div>
+          </div>
+
+          <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+              <!---<span class="carousel-control-prev-icon"></span>--->
+          </a>
+          <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+              <!---<span class="carousel-control-next-icon"></span>--->
+          </a>
+
+      </div>
+
+  </section>
+
+
+  <!-- Contact --->
+  <section class="page-section" id="contact">
+    <form action="https://formspree.io/therbootcamp@gmail.com" method="POST" id="Contact_form" name="Contact_form">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Kontaktieren Sie uns!</h2>
+          <font style="top:30px;" class="checkbox">Ich möchte der mailing list beitreten! <input type="checkbox" name="mailing list"></font><br>
+          <br><br>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+
+            <input type="hidden" name="Form" value="Contact form" />
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input class="form-control"name="name" type="text" placeholder="Ihr Name *" required="required" data-validation-required-message="Bitte geben Sie Ihren Namen ein.">
+                  <p class="help-block text-danger"></p>
+                </div>
+                <div class="form-group">
+                  <input class="form-control" name="email" type="email" placeholder="Ihre Email *" required="required" data-validation-required-message="Bitte geben Sie Ihre Email ein.">
+                  <p class="help-block text-danger"></p>
+                </div>
+
+                <div class="form-group">
+                  <input class="form-control" name="phone" type="tel" placeholder="Ihre Telefonnummer" data-validation-required-message="Bitte geben Sie ihre Telefonnummer ein.">
+                  <p class="help-block text-danger"></p>
+                </div>
+
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <textarea class="form-control" name="message" placeholder="Ihre Nachricht" data-validation-required-message="Bitte geben Sie eine Nachricht ein."></textarea>
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+
+              <div class="col-lg-12 text-center">
+
+                <div id="success"></div>
+                <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Nachricht absenden</button>
+              </div>
+
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Contact
+  <section class="page-section" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Contact Us</h2><br><br>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <form id="contactForm" name="sentMessage" novalidate="novalidate">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input class="form-control" id="name" type="text" placeholder="Your Name *" required="required" data-validation-required-message="Please enter your name.">
+                  <p class="help-block text-danger"></p>
+                </div>
+                <div class="form-group">
+                  <input class="form-control" id="email" type="email" placeholder="Your Email *" required="required" data-validation-required-message="Please enter your email address.">
+                  <p class="help-block text-danger"></p>
+                </div>
+                <div class="form-group">
+                  <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" required="required" data-validation-required-message="Please enter your phone number.">
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <textarea class="form-control" id="message" placeholder="Your Message *" required="required" data-validation-required-message="Please enter a message."></textarea>
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+              <div class="col-lg-12 text-center">
+                <div id="success"></div>
+                <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Send Message</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  -->
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-4">
+          <span class="copyright">Copyright &copy; The R Bootcamp 2019</span>
+        </div>
+        <div class="col-md-4">
+          <ul class="list-inline social-buttons">
+            <li class="list-inline-item">
+              <a href="https://twitter.com/therbootcamp">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://github.com/therbootcamp">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.linkedin.com/company/27090302">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <ul class="list-inline quicklinks">
+            <li class="list-inline-item">
+              <a data-toggle="modal" href="#privacy">Privacy Policy</a>
+            </li>
+            <li class="list-inline-item">
+              <a data-toggle="modal" href="#terms">Terms of Use</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>
