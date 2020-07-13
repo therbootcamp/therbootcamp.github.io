@@ -2,31 +2,6 @@
 <html lang="en">
 
 <head>
-  <script>
-    //var ml_text = "DE | Apr 3/4 | Anmelden<p style='border-top: 1px solid #6c757d;margin-top:4px;margin-bottom:-2px'>Online Kurs</p>";
-    //var ml_link = "https://advancedstudies.unibas.ch/studienangebot/kurs/maschinelles-lernen-mit-r-272008#collapsible-heading-anmeldung"
-    //var expl_link = "mailto:therbootcamp@gmail.com?subject=Voranmeldug für Explorative Datenanalyse mit R&amp;body=Ich möchte mich für das nächste R Bootcamp 'Explorative Datenanalyse mit R' voranmelden."
-    var i2r_text = "DE | Aug 28 | Anmelden";
-    var i2r_link = "https://advancedstudies.unibas.ch/studienangebot/kurs/einfuehrung-in-die-moderne-datenanalyse-mit-r-272005#collapsible-heading-anmeldung"
-    var i2r_font = "bolder"; //lighter
-    var expl_text = "DE | Sep 4/5 | Anmelden";
-    var expl_link = "https://advancedstudies.unibas.ch/studienangebot/kurs/explorative-datenanalyse-mit-r-272006#collapsible-heading-anmeldung"
-    var expl_font = "bolder";
-    var stat_text = "DE | Sep 25/26 | Anmelden";
-    var stat_link = "https://advancedstudies.unibas.ch/studienangebot/kurs/statistik-mit-r-233189#collapsible-heading-anmeldung"
-    var stat_font = "bolder";
-    var ml_text = "DE | Okt 23/24 | Anmelden";
-    var ml_link = "https://advancedstudies.unibas.ch/studienangebot/kurs/maschinelles-lernen-mit-r-272008#collapsible-heading-anmeldung"
-    var ml_font = "bolder";
-    var rep_text = "DE | tba | Voranmelden<p style='border-top: 1px solid #6c757d;margin-top:4px;margin-bottom:-2px'>Online Kurs</p>";
-    var rep_link = "mailto:therbootcamp@gmail.com?subject=Voranmeldug für Reporting mit R&amp;body=Ich möchte mich für das nächste R Bootcamp 'Reporting mit R' voranmelden."
-    var rep_font = "lighter";
-
-    // running link
-    var run_link = "https://therbootcamp.github.io/RmR_2020Jun/"
-    var run_style = '' // margin-bottom:0px; // ''
-    var run_style2 = 'none' // '' // 'none'
-  </script>
 
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -40,8 +15,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-
-  <title>The R Bootcamp - Lerne Data Science mit R</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -85,7 +58,7 @@
   <!-- End Google Tag Manager (noscript) -->
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav" style="background-color: #212529">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     <div class="container">
       <a class="navbar-brand js-scroll-trigger" href="#page-top">The R Bootcamp</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -95,71 +68,404 @@
       <div class="collapse navbar-collapse" id="navbarResponsive" >
         <ul class="navbar-nav text-uppercase ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#services">We Teach R</a>
+            <a class="nav-link js-scroll-trigger" href="https://therbootcamp.github.io/#services">We Teach R</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#courses">Kurse</a>
+            <a class="nav-link js-scroll-trigger" href="https://therbootcamp.github.io/#courses">Kurse</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#testimonials">Testimonials</a>
+            <a class="nav-link js-scroll-trigger" href="https://therbootcamp.github.io/#testimonials">Testimonials</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#team">Team</a>
+            <a class="nav-link js-scroll-trigger" href="https://therbootcamp.github.io/#team">Team</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact">Kontakt</a>
+            <a class="nav-link js-scroll-trigger" href="https://therbootcamp.github.io/#contact">Kontakt</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="https://therbootcamp.github.io/en">🇬🇧</a>
+            <a class="nav-link js-scroll-trigger" href="https://therbootcamp.github.io/en/ml.html">🇬🇧</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
+
+  <style>
+
+  .icon {
+    color:#212529;
+    position: absolute;
+    top: 50%;
+    margin: 0;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    font-weight:500;
+  }
+
+  .usp {
+    color: white;
+    text-align: left;
+    font-weight:100;
+    padding-bottom: 10px;
+  }
+
+  .bullet img {}
+
+  .unibas-tag, .webinar-tag {
+    color:white;
+    border-radius:6px;
+    vertical-align: middle;
+    margin:8px;
+    display:inline-block;
+  }
+
+  .unibas-tag {
+    /*box-shadow: 6px 6px #737373;*/
+
+  }
+
+  .webinar-tag {
+    /*box-shadow: 6px 6px #3a6655;*/
+    color: white;
+    border: 1px solid white;
+    }
+
+  .webinar-tag h1{
+    font-weight: 100;
+  }
+
+  @media (max-width: 576px) {
+    .concepts li{font-size: 16px;}
+    #myCarousel {height: 620px}
+    .title {font-size:60px;padding: 0px 0px 10px 0px;}
+    .usp {font-size:20px}
+    .webinar-tag {width:140px;height:52px;padding:11px 8px 8px 12px}
+    .unibas-tag {width:160px;height:60px;padding:2px 6px 6px 20px}
+    .webinar-tag h1 {font-size:1.6em}
+    .bullet img {width:32px;height:32px}
+  }
+
+  @media (min-width: 576px) {
+    .concepts li{font-size: 16px;}
+    #myCarousel {height: 620px}
+    .title {font-size:60px;padding: 0px 0px 10px 0px;}
+    .usp {font-size:20px}
+    .webinar-tag {width:140px;height:52px;padding:11px 8px 8px 12px}
+    .unibas-tag {width:160px;height:60px;padding:2px 6px 6px 20px}
+    .webinar-tag h1 {font-size:1.6em}
+    .bullet img {width:32px;height:32px}
+  }
+
+  @media (min-width: 768px) {
+    .concepts li{font-size: 12px;}
+    #myCarousel {height: 400px}
+    .title {font-size:80px;padding: 0px 0px 10px 0px;}
+    .usp {font-size:24px}
+    .webinar-tag {width:140px;height:52px;padding:11px 8px 8px 12px}
+    .unibas-tag {width:160px;height:60px;padding:2px 6px 6px 12px}
+    .webinar-tag h1 {font-size:1.6em}
+    .bullet img {width:32px;height:32px}
+  }
+
+  @media (min-width: 992px) {
+    .concepts li{
+      font-size: 18px;
+      padding: 4px 0px;
+      }
+    #myCarousel {height: 500px}
+    .title {font-size:100px;padding: 20px 0px;}
+    .usp {font-size:28px}
+    .webinar-tag {width:200px;height:80px;padding:20px}
+    .unibas-tag {width:240px;height:100px;padding:2px 6px 6px 20px}
+    .webinar-tag h1 {font-size:2.2em}
+    .bullet img {width:48px;height:48px}
+  }
+
+  @media (min-width: 1200px) {
+    .concepts li{
+      font-size: 20px;
+      padding: 10px 0px;
+    }
+    #myCarousel {height: 580px}
+    .title {font-size:140px;padding: 20px 0px;}
+    .usp {font-size:40px}
+    .webinar-tag {width:200px;height:80px;padding:20px}
+    .unibas-tag {width:240px;height:100px;padding:2px 6px 6px 20px}
+    .webinar-tag h1 {font-size:2.2em}
+    .bullet img {width:48px;height:48px}
+  }
+
+
+  .slides {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9, for an aspect ratio of 1:1 change to this value to 100% */
+    }
+  iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    }
+
+
+
+  </style>
+
+
   <!-- Services -->
-  <section class="page-section bg-light" id="services" style="padding: 200px 100px 100px 100px">
-  </div>
-      <div id="myCarousel" class="carousel slide container" data-ride="carousel" style="height:400px">
+  <section class="page-section" id="services" style="padding: 200px 100px 40px 100px;background-image:url(../img/header_narrow.jpg);background-size:cover">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <div class="row" align="left" style=";height:68px;margin-bottom:20px">
+            <div class="unibas-tag"><img src="../img/unibas_invert.png" style="max-width:100%;max-height:100%"></img></div>
+            <div class="webinar-tag"><h1>Webinar</h1></div>
+          </div>
+        </div>
+        <div class="col-lg-12 text-center">
+          <h1 class="title text-uppercase" style="color:white" align="left">Maschinelles Lernen mit R</h1>
+          <div class="row">
+          <div class="col-md-1 text-center bullet">
+              <img src="../img/sticker2.png">
+          </div>
+          <div class="col-md-11 text-center">
+            <h1 class="usp">ML ermöglicht bahnbrechende Entwicklungen in Wirtschafts und Forschung.</h1>
+          </div>
+          <div class="col-md-1 text-center bullet">
+              <img src="../img/sticker2.png">
+          </div>
+          <div class="col-md-11 text-center">
+            <h1 class="usp">Lerne in 2 Tagen was Du wissen musst um mit R ML auf Deine Daten anzuwenden.</h1>
+          </div>
+          </div>
+          <br><br><br>
+          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#contact">Anmelden</a>
+          <br><br><br>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="page-section bg-light" id="services">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2">
+          <span class="fa-stack fa-4x">
+            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+            <i class="fas fa-users fa-stack-1x fa-inverse"></i>
+          </span>
+        </div>
+        <div class="col-md-3">
+          <h4 class="icon"><b>Kleine Gruppen</b><br> bis maximal 14 Teilnehmer</h4>
+        </div>
+        <div class="col-md-2"></div>
+        <div class="col-md-2">
+          <span class="fa-stack fa-4x">
+            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+            <i class="fas fa-money-bill-alt fa-stack-1x fa-inverse"></i>
+          </span>
+        </div>
+        <div class="col-md-3">
+          <h4 class="icon"><b>990 CHF</b></h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2">
+          <span class="fa-stack fa-4x">
+            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+            <i class="fas fa-hand-holding-heart fa-stack-1x fa-inverse"></i>
+          </span>
+        </div>
+        <div class="col-md-3">
+          <h4 class="icon"><b>1-zu-1 Betreuung</b><br>durch erfahrene Dozenten</h4>
+        </div>
+        <div class="col-md-2"></div>
+        <div class="col-md-2">
+          <span class="fa-stack fa-4x">
+            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+            <i class="fas fa-calendar-alt fa-stack-1x fa-inverse"></i>
+          </span>
+        </div>
+        <div class="col-md-3">
+          <h4 class="icon"><b>2-Tage</b><br>von 9 bis 18Uhr</h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2">
+            <span class="fa-stack fa-4x">
+              <i class="fas fa-circle fa-stack-2x text-primary"></i>
+              <i class="fas fa-headset fa-stack-1x fa-inverse"></i>
+            </span>
+        </div>
+        <div class="col-md-3">
+          <h4 class="icon"><b>Webinar</b><br>Online-Kurs über Zoom</h4>
+        </div>
+        <div class="col-md-2"></div>
+        <div class="col-md-2">
+            <span class="fa-stack fa-4x">
+              <i class="fas fa-circle fa-stack-2x text-primary"></i>
+              <i class="fas fa-registered fa-stack-1x fa-inverse"></i>
+            </span>
+        </div>
+        <div class="col-md-3">
+          <h4 class="icon"><b>R Grundlagen</b> vorausgesetzt. <a data-toggle="modal" href="#experience"><b>&rarr;erfahre mehr</b></a></h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<style>
+  #schedule {
+
+  }
+  .schedule-head {
+    font-size:1.75em;
+    font-weight:900;
+    font-family: Montserrat;
+  }
+  .schedule-times {
+    font-size:1.25em;
+    font-weight:100;
+    font-family: Montserrat;
+    text-align: right;
+  }
+  .schedule-content {
+    font-size:1.5em;
+    font-weight:100;
+    font-family: Montserrat;
+    background-color: #f39cac;
+    color: white;
+    border: 4px solid white;
+    border-radius:4px;
+    height:1.7em;
+  }
+  .schedule-break {
+    font-size:1.5em;
+    font-weight:100;
+    font-family: Montserrat;
+    background-color: #bfbfbf;
+    color: white;
+    border: 4px solid white;
+    border-radius:4px;
+    height:1.7em;
+  }
+
+  .schedule-session {
+    font-size:1.5em;
+    font-weight:900;
+    font-family: Montserrat;
+    background-color: #EA4B68;
+    color: white;
+    border: 4px solid white;
+    border-radius:4px;
+  }
+</style>
+
+
+  <!-- Services -->
+  <section class="page-section" id="schedule">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-9 schedule-head">Tag 1</div>
+            <div class="col-md-3 schedule-times">0900</div>
+            <div class="col-md-9 schedule-content">Willkommen</div>
+            <div class="col-md-3 schedule-times">0930</div>
+            <div class="col-md-9 schedule-session" style="height:3.4em;">Was ist maschinelles Lernen</div>
+            <div class="col-md-3 schedule-times">1030</div>
+            <div class="col-md-9 schedule-session" style="height:5.1em;">Fitting</div>
+            <div class="col-md-3 schedule-times">1200</div>
+            <div class="col-md-9 schedule-break">Pause</div>
+            <div class="col-md-3 schedule-times">1300</div>
+            <div class="col-md-9 schedule-session" style="height:3.4em;">Fitting</div>
+            <div class="col-md-3 schedule-times">1400</div>
+            <div class="col-md-9 schedule-session" style="height:5.95em;">Vorhersage</div>
+            <div class="col-md-3 schedule-times">1600</div>
+            <div class="col-md-9 schedule-session" style="height:5.95em;">Optimisierung</div>
+            <div class="col-md-3 schedule-times">1755</div>
+            <div class="col-md-9 schedule-content">Wrap-up</div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-9 schedule-head">Tag 2</div>
+            <div class="col-md-3 schedule-times">0900</div>
+            <div class="col-md-9 schedule-content" style="height:2.55em;">Wiederholung</div>
+            <div class="col-md-3 schedule-times">0945</div>
+            <div class="col-md-9 schedule-session" style="height:7.65em;">Unüberwachtes Lernen</div>
+            <div class="col-md-3 schedule-times">1200</div>
+            <div class="col-md-9 schedule-break">Pause</div>
+            <div class="col-md-3 schedule-times">1300</div>
+            <div class="col-md-9 schedule-session" style="height:7.65em;">Features</div>
+            <div class="col-md-3 schedule-times">1515</div>
+            <div class="col-md-9 schedule-session" style="height:7.65em;">Modelle</div>
+            <div class="col-md-3 schedule-times">1730</div>
+            <div class="col-md-9 schedule-content">Ausblick</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Services -->
+  <section class="page-section bg-light" id="slides">
+      <div id="myCarousel" class="carousel slide container" data-ride="carousel">
           <ol class="carousel-indicators" style="bottom:-50px">
               <li data-target="#myCarousel" data-slide-to="0" class="active" style="background-color:#6c757d"></li>
               <li data-target="#myCarousel" data-slide-to="1" style="background-color:#6c757d"></li>
-              <li data-target="#myCarousel" data-slide-to="2" style="background-color:#6c757d"></li>
-              <li data-target="#myCarousel" data-slide-to="3" style="background-color:#6c757d"></li>
-              <li data-target="#myCarousel" data-slide-to="4" style="background-color:#6c757d"></li>
-              <li data-target="#myCarousel" data-slide-to="5" style="background-color:#6c757d"></li>
-              <li data-target="#myCarousel" data-slide-to="6" style="background-color:#6c757d"></li>
           </ol>
           <div class="carousel-inner col-lg-12 text-center" style="padding-bottom:100px;font-size:1em">
-             <h2 class="section-heading text-uppercase" style="margin-bottom:40px">Was Teilnehmer sagen</h2>
+             <h2 class="section-heading text-uppercase" style="margin-bottom:40px">Theoretische Grundlagen</h2>
              <div class="carousel-item active">
-                 <p class="section-subheading text-muted">"Vielen Dank für den hervorragenden Kurs, ich habe wirklich viel gelernt. Die Materialien waren super nützlich und die Beispiele wirklich interessant. Außerdem wart ihr alle fantastisch, super hilfsbereit, engagiert und die Atmosphäre war wirklich anregend."</p>
-                 <br><p class="text-muted"><b>BRUNO</b>, Head of Clinical Development</p>
+               <div class="row">
+                 <div class="col-md-9">
+                   Klicke auf die Folien. Verwende dann <b>&larr;</b> und <b>&rarr;</b>.<br>
+                   <div class="slides">
+                   <iframe src="https://therbootcamp.github.io/ML_2020Apr/_sessions/WhatIsML/WhatIsML.html"></iframe>
+                 </div>
+                 </div>
+                 <div class="col-md-3">
+                   <p><br>
+                     <h4 align="left">Konzepte</h4>
+                     <ol class="concepts text-muted" align="left">
+                       <li>Maschinelles Lernen versus Statistik</li>
+                       <li>Algorithmen versus Intuition</li>
+                       <li>Arten des maschinellen Lernens</li>
+                       <li>Der datenalytische Prozess</li>
+                     </ol>
+                   </p>
+                 </div>
+               </div>
              </div>
               <div class="carousel-item">
-                  <p class="section-subheading text-muted">"Ein perfekter Kurs, für jeden der oder die ein gutes Verständnis für das maschinelle Lernen und seine Anwendung in R erlangen möchten. Der Kurs behandelt die wichtigsten Themen des maschinellen Lernens und ist sehr gut strukturiert. Am Ende werden Sie in der Lage sein, effektive maschinelle Lernmodelle zu erstellen, zu bewerten und zu optimieren. Die Dozenten sind begeistert vom Thema und haben alles auf sehr verständliche Weise erklärt."</p>
-                  <br><p class="text-muted"><b>FREDERIK</b>, Senior consultant</p>
+                <div class="row">
+                  <div class="col-md-9">
+                    Klicke auf die Folien. Verwende dann <b>&larr;</b> und <b>&rarr;</b>.<br>
+                    <div class="slides">
+                    <iframe src="https://therbootcamp.github.io/ML_2020Apr/_sessions/Fitting/Fitting.html"></iframe>
+                  </div>
+                  </div>
+                  <div class="col-md-3">
+                    <p><br>
+                      <h4 align="left">Konzepte</h4>
+                      <ol class="concepts text-muted" align="left">
+                        <li>Maschinelles Lernen versus Statistik</li>
+                        <li>Algorithmen versus Intuition</li>
+                        <li>Arten des maschinellen Lernens</li>
+                        <li>Der datenalytische Prozess</li>
+                      </ol>
+                    </p>
+                  </div>
+                </div>
               </div>
-              <div class="carousel-item">
-                  <p class="section-subheading text-muted">"Ihr verdient alle Komplimente: für die Präsentation, das Training, eure Hilfe und nicht zuletzt für eure freundliche Art. Der Kurs lag über meinen Erwartungen! Das präsentierte Material war praxisnah und aktuell!"</p>
-                  <br><p class="text-muted"><b>STEFAN</b>, Senior Risk Modeller & Researcher</p>
-              </div>
-              <div class="carousel-item">
-                  <p class="section-subheading text-muted">"Ich habe von den Grundlagen bis hin zu wirklich coolen Dingen wie interaktiven Plots gelernt. Gleich nach dem Bootcamp entschied ich mich, komplett auf R umzusteigen. Wirklich tolles Bootcamp!"</p>
-                  <br><p class="text-muted"><b>EDGAR</b>, Associate Professor</p>
-              </div>
-              <div class="carousel-item">
-                  <p class="section-subheading text-muted" >"Jeder Teilnehmer wird etwas für sie oder ihn relevantes gefunden haben, sei es Statistik, Visualisierung, Präsentation oder Web-Applikation. Es hat mich sicherlich dazu gebracht, meinen Computer nehmen zu wollen und sofort loszulegen!"</p>
-                  <br><p class="text-muted"><b>JOHAN</b>, Analyst</p>
-              </div>
-              <div class="carousel-item">
-                  <p class="section-subheading text-muted">"Lernen R im The R Bootcamp hat mir das Gefühl gegeben [...], in der sich wandelnden Finanzindustrie relevant zu bleiben."</p>
-                  <br><p class="text-muted"><b>IRENA</b>, Credit Officer</p>
-              </div>
-              <div class="carousel-item">
-                  <p class="section-subheading text-muted">"Ich hatte keine Programmiererfahrung, aber mit dem R Bootcamp (nach nur einem halbem Tag!) wurde R auf eine lockere und bequeme Art für mich zugänglich gemacht. Ich freue mich auf die nächsten Schritte mit R und R Bootcamp."</p>
-                  <br><p class="text-muted"><b>SARAH</b>, Wissenschaftliche Mitarbeiterin, Pharma</p>
-              </div>
+            </div>
           </div>
 
           <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
@@ -170,18 +476,78 @@
           </a>
 
       </div>
+    </section>
 
-  </section>
+    <!-- Services -->
+    <section class="page-section" id="practicals">
+        <div id="myCarousel2" class="carousel slide container" data-ride="carousel" style="height:580px">
+            <ol class="carousel-indicators" style="bottom:-50px">
+                <li data-target="#myCarousel2" data-slide-to="0" class="active" style="background-color:#6c757d"></li>
+                <li data-target="#myCarousel2" data-slide-to="1" style="background-color:#6c757d"></li>
+            </ol>
+            <div class="carousel-inner col-lg-12 text-center" style="padding-bottom:100px;font-size:1em">
+               <h2 class="section-heading text-uppercase" style="margin-bottom:40px">Praktische Übungen</h2>
+               <div class="carousel-item active">
+                 <div class="row">
+                   <div class="col-md-9">
+                     Klicke auf die Folien. Verwende dann <b>&larr;</b> und <b>&rarr;</b>.<br>
+                     <div class="slides">
+                     <iframe src="https://therbootcamp.github.io/ML_2020Apr/_sessions/Fitting/Fitting_practical.html"></iframe>
+                   </div>
+                   </div>
+                   <div class="col-md-3">
+                     <p><br>
+                       <h4 align="left">Konzepte</h4>
+                       <ol class="concepts text-muted" align="left">
+                         <li>Maschinelles Lernen versus Statistik</li>
+                         <li>Algorithmen versus Intuition</li>
+                         <li>Arten des maschinellen Lernens</li>
+                         <li>Der datenalytische Prozess</li>
+                       </ol>
+                     </p>
+                   </div>
+                 </div>
+               </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-md-9">
+                      Klicke auf die Seite. Verwende dann <b>&uarr;</b> und <b>&darr;</b>.<br>
+                      <div class="slides">
+                      <iframe src="https://therbootcamp.github.io/ML_2020Apr/_sessions/Prediction/Prediction_practical.html"></iframe>
+                    </div>
+                    </div>
+                    <div class="col-md-3">
+                      <p><br>
+                        <h4 align="left">Konzepte</h4>
+                        <ol class="concepts text-muted" align="left">
+                          <li>Maschinelles Lernen versus Statistik</li>
+                          <li>Algorithmen versus Intuition</li>
+                          <li>Arten des maschinellen Lernens</li>
+                          <li>Der datenalytische Prozess</li>
+                        </ol>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+            </div>
 
+            <a class="carousel-control-prev" href="#myCarousel2" data-slide="prev">
+                <!---<span class="carousel-control-prev-icon"></span>--->
+            </a>
+            <a class="carousel-control-next" href="#myCarousel2" data-slide="next">
+                <!---<span class="carousel-control-next-icon"></span>--->
+            </a>
+
+        </div>
+      </section>
 
   <!-- Contact --->
-  <section class="page-section" id="contact">
+  <section class="page-section" id="contact" style="background-size:cover;background-image:url(../img/hands.png)">
     <form action="https://formspree.io/therbootcamp@gmail.com" method="POST" id="Contact_form" name="Contact_form">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Kontaktieren Sie uns!</h2>
-          <font style="top:30px;" class="checkbox">Ich möchte der mailing list beitreten! <input type="checkbox" name="mailing list"></font><br>
+          <h2 class="section-heading text-uppercase">Melden Dich an!</h2>
           <br><br>
         </div>
       </div>
@@ -192,23 +558,23 @@
             <div class="row">
               <div class="col-md-6">
                 <div class="form-group">
-                  <input class="form-control"name="name" type="text" placeholder="Ihr Name *" required="required" data-validation-required-message="Bitte geben Sie Ihren Namen ein.">
+                  <input class="form-control"name="name" type="text" placeholder="Dein Vor- und Nachnahme *" required="required" data-validation-required-message="Bitte geben Sie Ihren Namen ein.">
                   <p class="help-block text-danger"></p>
                 </div>
                 <div class="form-group">
-                  <input class="form-control" name="email" type="email" placeholder="Ihre Email *" required="required" data-validation-required-message="Bitte geben Sie Ihre Email ein.">
+                  <input class="form-control" name="email" type="email" placeholder="Deine Email *" required="required" data-validation-required-message="Bitte geben Sie Ihre Email ein.">
                   <p class="help-block text-danger"></p>
                 </div>
 
                 <div class="form-group">
-                  <input class="form-control" name="phone" type="tel" placeholder="Ihre Telefonnummer" data-validation-required-message="Bitte geben Sie ihre Telefonnummer ein.">
+                  <input class="form-control" name="phone" type="tel" placeholder="Deine Telefonnummer" data-validation-required-message="Bitte geben Sie ihre Telefonnummer ein.">
                   <p class="help-block text-danger"></p>
                 </div>
 
               </div>
               <div class="col-md-6">
                 <div class="form-group">
-                  <textarea class="form-control" name="message" placeholder="Ihre Nachricht" data-validation-required-message="Bitte geben Sie eine Nachricht ein."></textarea>
+                  <textarea class="form-control" name="message" placeholder="Bemerkungen" data-validation-required-message="Bitte geben Sie eine Nachricht ein."></textarea>
                   <p class="help-block text-danger"></p>
                 </div>
               </div>
@@ -217,7 +583,7 @@
               <div class="col-lg-12 text-center">
 
                 <div id="success"></div>
-                <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Nachricht absenden</button>
+                <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Anmelden</button>
               </div>
 
             </div>
@@ -313,6 +679,76 @@
       </div>
     </div>
   </footer>
+
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Contact form JavaScript -->
+  <script src="js/jqBootstrapValidation.js"></script>
+  <script src="js/contact_me.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/agency.min.js"></script>
+
+
+  <!--
+  MODALS MODALS MODALS MODALS MODALS MODALS MODALS MODALS MODALS MODALS MODALS
+  MODALS MODALS MODALS MODALS MODALS MODALS MODALS MODALS MODALS MODALS MODALS
+  MODALS MODALS MODALS MODALS MODALS MODALS MODALS MODALS MODALS MODALS MODALS
+  MODALS MODALS MODALS MODALS MODALS MODALS MODALS MODALS MODALS MODALS MODALS
+  MODALS MODALS MODALS MODALS MODALS MODALS MODALS MODALS MODALS MODALS MODALS
+  -->
+
+  <!-- R EXPERIENCE R EXPERIENCE R EXPERIENCE R EXPERIENCE R EXPERIENCE  -->
+  <div class="portfolio-modal modal fade" id="experience" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <img class="img-fluid d-block mx-auto" src="img/portfolio/R.png" alt="">
+                <h2 class="text-uppercase">Weiss ich genug über R?</h2>
+                <p class="item-intro text-muted">Mit diesem Quiz können Sie herausfinden, ob Sie über die nötigen R Grundlagen verfügen. Sie sollten mindestens 7 Punkte erreichen. Wenn Sie nicht genügend Punkte erreicht haben, Unklarheiten bestehen, oder auf der Suche nach Materialien für die weitere Vorbereitung sind, schreiben sie uns einfach unter therbootcamp@gmail.com.</p>
+
+                <p class="head">1. R was designed for analytics</p>
+                <p class="text-muted entry">R was designed first and foremost as a language for analytics and statistics. For that reason, R makes it easy for you to run statistical analyses, may it be an A/B test or a complex machine learning algorithm, with minimal code. Thanks to modern packages such as <a class="pckg" target="_blank" href="http://cran.r-project.org/package=dbplyr">dbplyr</a> and <a class="pckg" target="_blank" href="http://cran.r-project.org/package=RHadoop">RHadoop</a>, R also enables you to use virtually the same code when analysing Gigabytes of data stored on databases as you would on a data from a small Excel spreadsheet. </p>
+
+                <p class="head">2. R has an unrivaled set of free packages</p>
+                <p class="text-muted entry">As great as R’s core framework is, the language would not be nearly as popular as it is today if it weren’t for R’s unrivaled collection of (freely available!) packages. What is an R package? An R package is a collection of code designed to help you, the programmer, solve a particular task without having to program a solution yourself. It really is difficult to overstate comprehensiveness of the R package universe.</p>
+
+                <p class="head">3. R enables you to make striking visualisations</p>
+                <p class="text-muted entry">As good as R is for statistics, it is as good, if not better, for data visualisation. Why? One word: <a class="pckg" target="_blank" href="http://cran.r-project.org/package=ggplot2">ggplot2</a>. The <a class="pckg" target="_blank" href="http://cran.r-project.org/package=ggplot2">ggplot2</a> package makes it easy for anyone to create colorful, complex, striking visualisations with minimal code. For example, you can create the plot below with essentially only 5 lines of code.</p>
+
+                <img src="img/portfolio/whyr/ggplot.png" style="max-width:400px"></img>
+
+                <p class="head">4. R works great with other languages</p>
+                <p class="text-muted entry">There are cases where you may want to take advantage of the features of other languages, such as C++ for its blinding speed or SQL for querying relational databases. Thankfully, with packages such as <a class="pckg" target="_blank" href="http://cran.r-project.org/package=Rcpp">Rcpp</a> for C++ or <a class="pckg" target="_blank" href="http://cran.r-project.org/package=dbplyr">dbplyr</a> for SQL combined with the amazing RStudio integrated developer environment, you can easily supplement your R code with these and other languages.</p>
+
+                <p class="head">5. R has a passionate, open community</p>
+                <p class="text-muted entry">Without question, one of the best things about R is its community of passionate users, developers and bloggers who will jump at the chance to show you all of the amazing things they are doing with R. With hundreds of bloggers sharing their code at <a href="www.r-bloggers.com">r-bloggers.com</a> or local meetup groups such as <a href="https://rladies.org/">R-Ladies</a> or Michael's <a href="https://www.meetup.com/Bern-R/">Bern R Meetup</a>, the opportunities to meet with and learn from other R users are really endless.</p>
+
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 </body>
