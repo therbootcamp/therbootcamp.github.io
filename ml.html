@@ -89,6 +89,42 @@
     font-weight: 100;
   }
 
+  .schedule {
+    font-family: Montserrat;
+    color: white;
+    border: 4px solid white;
+    border-radius:4px;
+    height:1.7em;
+  }
+
+  .schedule-head {
+    font-size:1.75em;
+    font-weight:900;
+    color: black;
+    }
+
+  .schedule-times {
+    font-size:1.25em;
+    font-weight:100;
+    text-align: right;
+    color: black;
+  }
+  .schedule-content {
+    font-size:1.5em;
+    font-weight:100;
+    background-color: #f39cac;
+  }
+  .schedule-break {
+    font-size:1.5em;
+    font-weight:100;
+    background-color: #bfbfbf;
+  }
+  .schedule-session {
+    font-size:1.5em;
+    font-weight:900;
+    background-color: #EA4B68;
+  }
+
   @media (min-width: 0px) {
     .concepts li{font-size: 16px;}
     #myCarousel {height: 620px}
@@ -104,6 +140,7 @@
     .masthead .container {
       padding-top: 120px;
     }
+
   }
 
   @media (min-width: 576px) {
@@ -132,15 +169,10 @@
     .unibas-tag {width:240px;height:100px;padding:6px 0px}
     .webinar-tag h1 {font-size:2.2em}
     .bullet {width:48px;height:48px}
-    .fa-stack {
-      font-size: 4em;
-    }
-    .icon {
-      font-size: 2rem;
-    }
-    .masthead .container {
-      padding-top: 200px;
-    }
+    .fa-stack {font-size: 4em;}
+    .icon {font-size: 2rem;}
+    .masthead .container {padding-top: 200px;}
+    .schedule-head {font-size: 2em;}
   }
 
 
@@ -168,47 +200,7 @@
     height: 100%;
     }
 
-  .schedule-head {
-    font-size:1.75em;
-    font-weight:900;
-    font-family: Montserrat;
-  }
-  .schedule-times {
-    font-size:1.25em;
-    font-weight:100;
-    font-family: Montserrat;
-    text-align: right;
-  }
-  .schedule-content {
-    font-size:1.5em;
-    font-weight:100;
-    font-family: Montserrat;
-    background-color: #f39cac;
-    color: white;
-    border: 4px solid white;
-    border-radius:4px;
-    height:1.7em;
-  }
-  .schedule-break {
-    font-size:1.5em;
-    font-weight:100;
-    font-family: Montserrat;
-    background-color: #bfbfbf;
-    color: white;
-    border: 4px solid white;
-    border-radius:4px;
-    height:1.7em;
-  }
 
-  .schedule-session {
-    font-size:1.5em;
-    font-weight:900;
-    font-family: Montserrat;
-    background-color: #EA4B68;
-    color: white;
-    border: 4px solid white;
-    border-radius:4px;
-  }
   </style>
 
 </head>
@@ -379,43 +371,71 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <div class="row">
+          <div class="row flex-nowrap">
             <div class="col-md-3"></div>
-            <div class="col-md-9 schedule-head">Tag 1</div>
-            <div class="col-md-3 schedule-times">0900</div>
-            <div class="col-md-9 schedule-content">Willkommen</div>
-            <div class="col-md-3 schedule-times">0930</div>
-            <div class="col-md-9 schedule-session" style="height:3.4em;">Was ist maschinelles Lernen</div>
-            <div class="col-md-3 schedule-times">1030</div>
-            <div class="col-md-9 schedule-session" style="height:5.1em;">Fitting</div>
-            <div class="col-md-3 schedule-times">1200</div>
-            <div class="col-md-9 schedule-break">Pause</div>
-            <div class="col-md-3 schedule-times">1300</div>
-            <div class="col-md-9 schedule-session" style="height:3.4em;">Fitting</div>
-            <div class="col-md-3 schedule-times">1400</div>
-            <div class="col-md-9 schedule-session" style="height:5.95em;">Vorhersage</div>
-            <div class="col-md-3 schedule-times">1600</div>
-            <div class="col-md-9 schedule-session" style="height:5.95em;">Optimisierung</div>
-            <div class="col-md-3 schedule-times">1755</div>
-            <div class="col-md-9 schedule-content">Wrap-up</div>
+            <div class="col-md-9 schedule schedule-head">Tag 1</div>
+          </div>
+          <div  class="row flex-nowrap">
+            <div class="col-md-3 schedule schedule-times">0900</div>
+            <div class="col-md-9 schedule schedule-content">Willkommen</div>
+          </div>
+          <div  class="row flex-nowrap">
+            <div class="col-md-3 schedule schedule-times">0930</div>
+            <div class="col-md-9 schedule schedule-session" style="height:3.4em;">Was ist maschinelles Lernen</div>
+          </div>
+          <div  class="row flex-nowrap">
+            <div class="col-md-3 schedule schedule-times">1030</div>
+            <div class="col-md-9 schedule schedule-session" style="height:5.1em;">Fitting</div>
+          </div>
+          <div  class="row flex-nowrap">
+            <div class="col-md-3 schedule schedule-times">1200</div>
+            <div class="col-md-9 schedule schedule-break">Pause</div>
+          </div>
+          <div  class="row flex-nowrap">
+            <div class="col-md-3 schedule schedule-times">1300</div>
+            <div class="col-md-9 schedule schedule-session" style="height:3.4em;">Fitting</div>
+          </div>
+          <div  class="row flex-nowrap">
+            <div class="col-md-3 schedule schedule-times">1400</div>
+            <div class="col-md-9 schedule schedule-session" style="height:5.95em;">Vorhersage</div>
+          </div>
+          <div  class="row flex-nowrap">
+            <div class="col-md-3 schedule schedule-times">1600</div>
+            <div class="col-md-9 schedule schedule-session" style="height:5.95em;">Optimisierung</div>
+          </div>
+          <div  class="row flex-nowrap">
+            <div class="col-md-3 schedule schedule-times">1755</div>
+            <div class="col-md-9 schedule schedule-content">Wrap-up</div>
           </div>
         </div>
         <div class="col-md-6">
-          <div class="row">
+          <div class="row flex-nowrap">
             <div class="col-md-3"></div>
-            <div class="col-md-9 schedule-head">Tag 2</div>
-            <div class="col-md-3 schedule-times">0900</div>
-            <div class="col-md-9 schedule-content" style="height:2.55em;">Wiederholung</div>
-            <div class="col-md-3 schedule-times">0945</div>
-            <div class="col-md-9 schedule-session" style="height:7.65em;">Unüberwachtes Lernen</div>
-            <div class="col-md-3 schedule-times">1200</div>
-            <div class="col-md-9 schedule-break">Pause</div>
-            <div class="col-md-3 schedule-times">1300</div>
-            <div class="col-md-9 schedule-session" style="height:7.65em;">Features</div>
-            <div class="col-md-3 schedule-times">1515</div>
-            <div class="col-md-9 schedule-session" style="height:7.65em;">Modelle</div>
-            <div class="col-md-3 schedule-times">1730</div>
-            <div class="col-md-9 schedule-content">Ausblick</div>
+            <div class="col-md-9 schedule schedule-head">Tag 2</div>
+          </div>
+          <div  class="row flex-nowrap">
+            <div class="col-md-3 schedule schedule-times">0900</div>
+            <div class="col-md-9 schedule schedule-content" style="height:2.55em;">Wiederholung</div>
+          </div>
+          <div  class="row flex-nowrap">
+            <div class="col-md-3 schedule schedule-times">0945</div>
+            <div class="col-md-9 schedule schedule-session" style="height:7.65em;">Unüberwachtes Lernen</div>
+          </div>
+          <div  class="row flex-nowrap">
+            <div class="col-md-3 schedule schedule-times">1200</div>
+            <div class="col-md-9 schedule schedule-break">Pause</div>
+          </div>
+          <div  class="row flex-nowrap">
+            <div class="col-md-3 schedule schedule-times">1300</div>
+            <div class="col-md-9 schedule schedule-session" style="height:7.65em;">Features</div>
+          </div>
+          <div  class="row flex-nowrap">
+            <div class="col-md-3 schedule schedule-times">1515</div>
+            <div class="col-md-9 schedule schedule-session" style="height:7.65em;">Modelle</div>
+          </div>
+          <div  class="row flex-nowrap">
+            <div class="col-md-3 schedule schedule-times">1730</div>
+            <div class="col-md-9 schedule schedule-content">Ausblick</div>
           </div>
         </div>
       </div>
