@@ -98,7 +98,7 @@
   }
 
   .schedule-head {
-    font-size:1.75em;
+    font-size:1.25em;
     font-weight:900;
     color: black;
     }
@@ -123,13 +123,19 @@
     font-size:1.5em;
     font-weight:900;
     background-color: #EA4B68;
+    padding-bottom:20px;
+    overflow: hidden;
+  }
+
+  .schedule-detail {
+    font-weight: 100;
+    font-size:1rem;
+    overflow: hidden;
   }
 
   @media (min-width: 0px) {
-    .concepts li{font-size: 16px;}
-    #myCarousel {height: 620px}
     .course-title {font-size:40px;padding:4% 0%}
-    .usp {font-size:1rem;}
+    .usp {font-size:1.2rem;}
     .webinar-tag {width:140px;height:52px;padding:14px 8px 8px 24px}
     .unibas-tag {width:160px;height:60px;padding:6px 0px}
     .webinar-tag h1 {font-size:1.6em}
@@ -141,30 +147,30 @@
       padding-top: 120px;
     }
 
+    #myCarousel, #myCarousel2 {height: 620px}
+    .concepts li{font-size: .8rem;}
   }
 
   @media (min-width: 576px) {
-    .concepts li{font-size: 16px;}
-    #myCarousel {height: 620px}
     .course-title {font-size:60px}
-    .usp {font-size:16px}
-  }
+    }
 
   @media (min-width: 768px) {
-    .concepts li{font-size: 12px;}
-    #myCarousel {height: 400px}
+    #myCarousel, #myCarousel2 {height: 400px}
     .course-title {font-size:80px}
-    .usp {font-size:24px;padding-left:0px}
+  }
+  @media (max-width: 768px) {
+    .schedule-long {margin-left:-50%;padding-right:10%;}
   }
 
   @media (min-width: 992px) {
     .concepts li{
-      font-size: 18px;
+      font-size: 1.2rem;
       padding: 4px 0px;
       }
-    #myCarousel {height: 500px}
+    #myCarousel, #myCarousel2  {height: 500px}
     .course-title {font-size:100px}
-    .usp {font-size:2rem;}
+    .usp {font-size:2rem;padding-left:0px;}
     .webinar-tag {width:200px;height:80px;padding:20px}
     .unibas-tag {width:240px;height:100px;padding:6px 0px}
     .webinar-tag h1 {font-size:2.2em}
@@ -176,13 +182,12 @@
   }
 
 
-
   @media (min-width: 1200px) {
     .concepts li{
-      font-size: 20px;
+      font-size: 1.4rem;
       padding: 10px 0px;
       }
-    #myCarousel {height: 580px}
+    #myCarousel, #myCarousel2 {height: 580px}
     .course-title {font-size:140px}
     .usp {font-size:40px}
   }
@@ -305,11 +310,11 @@
             <div class="col-4" align="right">
               <span class="fa-stack">
                 <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                <i class="fas fa-money-bill-alt fa-stack-1x fa-inverse"></i>
+                <i class="fas fa-headset fa-stack-1x fa-inverse"></i>
               </span>
             </div>
             <div class="col-8">
-              <h4 class="icon"><b>990 CHF</b></h4>
+              <h4 class="icon"><b>Webinar</b><br>Online-Kurs über Zoom</h4>
             </div>
           </div>
           <div class="row flex-nowrap">
@@ -325,7 +330,7 @@
           </div>
         </div>
         <div class="col-md-6">
-          <div class="row">
+          <div class="row flex-nowrap">
             <div class="col-4" align="right">
               <span class="fa-stack">
                 <i class="fas fa-circle fa-stack-2x text-primary"></i>
@@ -340,11 +345,11 @@
             <div class="col-4" align="right">
               <span class="fa-stack">
                 <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                <i class="fas fa-headset fa-stack-1x fa-inverse"></i>
+                <i class="fas fa-money-bill-alt fa-stack-1x fa-inverse"></i>
               </span>
             </div>
             <div class="col-8">
-              <h4 class="icon"><b>Webinar</b><br>Online-Kurs über Zoom</h4>
+              <h4 class="icon"><b>990 CHF</b><br>für Kurs und offene Materialien</h4>
             </div>
           </div>
           <div class="row flex-nowrap">
@@ -355,7 +360,7 @@
               </span>
             </div>
             <div class="col-8">
-              <h4 class="icon"><b>R Grundlagen</b><br>vorausgesetzt.<br><a data-toggle="modal" href="#experience">&rarr;Details</a></h4>
+              <h4 class="icon"><b>R Grundlagen</b><br>vorausgesetzt.<br><a data-toggle="modal" href="#experience">&#9758; erfahre mehr</a></h4>
             </div>
           </div>
         </div>
@@ -369,7 +374,7 @@
   <!-- Services -->
   <section class="page-section" id="schedule">
     <div class="container">
-      <div class="row">
+      <div class="row schedule-long">
         <div class="col-md-6">
           <div class="row flex-nowrap">
             <div class="col-md-3"></div>
@@ -381,11 +386,17 @@
           </div>
           <div  class="row flex-nowrap">
             <div class="col-md-3 schedule schedule-times">0930</div>
-            <div class="col-md-9 schedule schedule-session" style="height:3.4em;">Was ist maschinelles Lernen</div>
+            <div class="col-md-9 schedule schedule-session" style="height:3.4em">
+              Was ist ML?
+              <p class="schedule-detail">Grundbegriffe &bull; Anwendungsgebiete</p>
+            </div>
           </div>
           <div  class="row flex-nowrap">
             <div class="col-md-3 schedule schedule-times">1030</div>
-            <div class="col-md-9 schedule schedule-session" style="height:5.1em;">Fitting</div>
+            <div class="col-md-9 schedule schedule-session" style="height:5.1em;">
+              Fitting<br>
+              <span class="schedule-detail">Loss-Funktionen &bull; Lineares Modell &bull; Regression &bull; Klassifikation</p>
+            </div>
           </div>
           <div  class="row flex-nowrap">
             <div class="col-md-3 schedule schedule-times">1200</div>
@@ -393,11 +404,17 @@
           </div>
           <div  class="row flex-nowrap">
             <div class="col-md-3 schedule schedule-times">1300</div>
-            <div class="col-md-9 schedule schedule-session" style="height:3.4em;">Fitting</div>
+            <div class="col-md-9 schedule schedule-session" style="height:3.4em;">
+              Fitting<br>
+              <span class="schedule-detail">Fitting in <pckg class="text-muted">caret</pckg></span>
+            </div>
           </div>
           <div  class="row flex-nowrap">
             <div class="col-md-3 schedule schedule-times">1400</div>
-            <div class="col-md-9 schedule schedule-session" style="height:5.95em;">Vorhersage</div>
+            <div class="col-md-9 schedule schedule-session" style="height:5.95em;">
+              Vorhersage<br>
+              <span class="schedule-detail">Decision Trees &bull; Random forests &bull; Overfitting &bull; Hold-out Daten</span>
+            </div>
           </div>
           <div  class="row flex-nowrap">
             <div class="col-md-3 schedule schedule-times">1600</div>
@@ -509,7 +526,7 @@
 
     <!-- Services -->
     <section class="page-section" id="practicals">
-        <div id="myCarousel2" class="carousel slide container" data-ride="carousel" style="height:580px">
+        <div id="myCarousel2" class="carousel slide container" data-ride="carousel">
             <ol class="carousel-indicators" style="bottom:-50px">
                 <li data-target="#myCarousel2" data-slide-to="0" class="active" style="background-color:#6c757d"></li>
                 <li data-target="#myCarousel2" data-slide-to="1" style="background-color:#6c757d"></li>
