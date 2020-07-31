@@ -1,0 +1,234 @@
+/*!
+ * Start Bootstrap - Agency v5.2.1 (https://startbootstrap.com/template-overviews/agency)
+ * Copyright 2013-2020 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-agency/blob/master/LICENSE)
+ */
+
+.icon {
+  color: #212529;
+  position: absolute;
+  top: 50%;
+  margin: 0;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.usp {
+  color: white;
+  text-align: left;
+  font-weight: 100;
+  padding-bottom: 10px;
+  overflow-wrap: normal;
+  padding-left: 8px;
+}
+
+.unibas-tag, .webinar-tag {
+  color: white;
+  border-radius: 6px;
+  vertical-align: middle;
+  margin: 8px;
+  display: inline-block;
+}
+
+.webinar-tag {
+  /*box-shadow: 6px 6px #3a6655;*/
+  color: white;
+  border-left: 1px solid white;
+  border-radius: 0px;
+}
+
+.webinar-tag h1 {
+  font-weight: 100;
+}
+
+.schedule {
+  font-family: Montserrat;
+  color: white;
+  border: 4px solid white;
+  border-radius: 4px;
+  height: 1.7em;
+}
+
+.schedule-head {
+  font-size: 2em;
+  font-weight: 900;
+  color: black;
+}
+
+.schedule-times {
+  font-size: 1.5em;
+  font-weight: 100;
+  text-align: right;
+  color: black;
+}
+
+.schedule-content {
+  font-size: 1.75em;
+  font-weight: 100;
+  background-color: #f39cac;
+}
+
+.schedule-break {
+  font-size: 1.75em;
+  font-weight: 100;
+  background-color: #bfbfbf;
+}
+
+.schedule-session {
+  font-size: 1.75em;
+  font-weight: 900;
+  background-color: #EA4B68;
+  padding-bottom: 20px;
+  overflow: hidden;
+}
+
+.schedule-detail {
+  font-weight: 100;
+  font-size: 1rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin: 0px 0px 0px 0px;
+}
+
+@media (min-width: 0px) {
+  .course-title {
+    font-size: 40px;
+    padding: 4% 0%;
+  }
+  .usp {
+    font-size: 1.5rem;
+  }
+  .webinar-tag {
+    width: 140px;
+    height: 52px;
+    padding: 14px 8px 8px 24px;
+  }
+  .unibas-tag {
+    width: 160px;
+    height: 60px;
+    padding: 6px 0px;
+  }
+  .webinar-tag h1 {
+    font-size: 1.6em;
+  }
+  .bullet {
+    width: 48px;
+    height: 48px;
+  }
+  .fa-stack {
+    font-size: 2.4em;
+  }
+  .masthead .container {
+    padding-top: 120px;
+  }
+  #myCarousel, #myCarousel2 {
+    height: 620px;
+  }
+  .concepts li {
+    font-size: .8rem;
+  }
+}
+
+@media (min-width: 576px) {
+  .course-title {
+    font-size: 60px;
+  }
+}
+
+@media (min-width: 768px) {
+  #myCarousel, #myCarousel2 {
+    height: 400px;
+  }
+  .course-title {
+    font-size: 80px;
+  }
+  .icon-row {
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .schedule-long {
+    margin-left: -50%;
+    padding-right: 10%;
+  }
+}
+
+@media (min-width: 992px) {
+  .concepts li {
+    font-size: 1.2rem;
+    padding: 4px 0px;
+  }
+  #myCarousel, #myCarousel2 {
+    height: 500px;
+  }
+  .course-title {
+    font-size: 100px;
+  }
+  .usp {
+    font-size: 2rem;
+    padding-left: 0px;
+  }
+  .webinar-tag {
+    width: 200px;
+    height: 80px;
+    padding: 20px;
+  }
+  .unibas-tag {
+    width: 240px;
+    height: 100px;
+    padding: 6px 0px;
+  }
+  .webinar-tag h1 {
+    font-size: 2.2em;
+  }
+  .bullet {
+    width: 48px;
+    height: 48px;
+  }
+  .fa-stack {
+    font-size: 4em;
+  }
+  .icon {
+    font-size: 2rem;
+  }
+  .masthead .container {
+    padding-top: 200px;
+  }
+  .schedule-head {
+    font-size: 2em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .concepts li {
+    font-size: 1.4rem;
+    padding: 10px 0px;
+  }
+  #myCarousel, #myCarousel2 {
+    height: 580px;
+  }
+  .course-title {
+    font-size: 140px;
+  }
+  .usp {
+    font-size: 40px;
+  }
+}
+
+.slides {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9, for an aspect ratio of 1:1 change to this value to 100% */
+}
+
+iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

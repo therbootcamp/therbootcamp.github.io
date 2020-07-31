@@ -28,6 +28,7 @@
 
   <!-- Custom styles for this template -->
   <link href="css/agency.min.css" rel="stylesheet">
+  <link href="css/landing.css" rel="stylesheet">
 
   <!-- Favicon -->
   <link rel="apple-touch-icon" sizes="57x57" href="/fav/apple-icon-57x57.png">
@@ -48,165 +49,6 @@
   <!--- Flags --->
   <link rel="stylesheet" type="text/css" href="//github.com/downloads/lafeber/world-flags-sprite/flags32.css">
 
-  <style>
-
-  .icon {
-    color:#212529;
-    position: absolute;
-    top: 50%;
-    margin: 0;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    font-weight:500;
-    font-size: 1.2rem;
-  }
-
-  .usp {
-    color: white;
-    text-align: left;
-    font-weight:100;
-    padding-bottom: 10px;
-    overflow-wrap: normal;
-    padding-left:8px;
-  }
-
-  .unibas-tag, .webinar-tag {
-    color:white;
-    border-radius:6px;
-    vertical-align: middle;
-    margin:8px;
-    display:inline-block;
-  }
-
-  .webinar-tag {
-    /*box-shadow: 6px 6px #3a6655;*/
-    color: white;
-    border-left: 1px solid white;
-    border-radius: 0px;
-    }
-
-  .webinar-tag h1{
-    font-weight: 100;
-  }
-
-  .schedule {
-    font-family: Montserrat;
-    color: white;
-    border: 4px solid white;
-    border-radius:4px;
-    height:1.7em;
-  }
-
-  .schedule-head {
-    font-size:1.25em;
-    font-weight:900;
-    color: black;
-    }
-
-  .schedule-times {
-    font-size:1.25em;
-    font-weight:100;
-    text-align: right;
-    color: black;
-  }
-  .schedule-content {
-    font-size:1.5em;
-    font-weight:100;
-    background-color: #f39cac;
-  }
-  .schedule-break {
-    font-size:1.5em;
-    font-weight:100;
-    background-color: #bfbfbf;
-  }
-  .schedule-session {
-    font-size:1.5em;
-    font-weight:900;
-    background-color: #EA4B68;
-    padding-bottom:20px;
-    overflow: hidden;
-  }
-
-  .schedule-detail {
-    font-weight: 100;
-    font-size:1rem;
-    overflow: hidden;
-  }
-
-  @media (min-width: 0px) {
-    .course-title {font-size:40px;padding:4% 0%}
-    .usp {font-size:1.2rem;}
-    .webinar-tag {width:140px;height:52px;padding:14px 8px 8px 24px}
-    .unibas-tag {width:160px;height:60px;padding:6px 0px}
-    .webinar-tag h1 {font-size:1.6em}
-    .bullet {width:32px;height:32px}
-    .fa-stack {
-      font-size: 2.4em;
-    }
-    .masthead .container {
-      padding-top: 120px;
-    }
-
-    #myCarousel, #myCarousel2 {height: 620px}
-    .concepts li{font-size: .8rem;}
-  }
-
-  @media (min-width: 576px) {
-    .course-title {font-size:60px}
-    }
-
-  @media (min-width: 768px) {
-    #myCarousel, #myCarousel2 {height: 400px}
-    .course-title {font-size:80px}
-  }
-  @media (max-width: 768px) {
-    .schedule-long {margin-left:-50%;padding-right:10%;}
-  }
-
-  @media (min-width: 992px) {
-    .concepts li{
-      font-size: 1.2rem;
-      padding: 4px 0px;
-      }
-    #myCarousel, #myCarousel2  {height: 500px}
-    .course-title {font-size:100px}
-    .usp {font-size:2rem;padding-left:0px;}
-    .webinar-tag {width:200px;height:80px;padding:20px}
-    .unibas-tag {width:240px;height:100px;padding:6px 0px}
-    .webinar-tag h1 {font-size:2.2em}
-    .bullet {width:48px;height:48px}
-    .fa-stack {font-size: 4em;}
-    .icon {font-size: 2rem;}
-    .masthead .container {padding-top: 200px;}
-    .schedule-head {font-size: 2em;}
-  }
-
-
-  @media (min-width: 1200px) {
-    .concepts li{
-      font-size: 1.4rem;
-      padding: 10px 0px;
-      }
-    #myCarousel, #myCarousel2 {height: 580px}
-    .course-title {font-size:140px}
-    .usp {font-size:40px}
-  }
-
-
-  .slides {
-    position: relative;
-    padding-bottom: 56.25%; /* 16:9, for an aspect ratio of 1:1 change to this value to 100% */
-    }
-  iframe{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    }
-
-
-  </style>
 
 </head>
 
@@ -295,7 +137,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <div class="row flex-nowrap">
+          <div class="row flex-nowrap icon-row">
             <div class="col-4" align="right">
               <span class="fa-stack">
                 <i class="fas fa-circle fa-stack-2x text-primary"></i>
@@ -306,7 +148,7 @@
               <h4 class="icon"><b>Kleine Gruppen</b><br> bis maximal 14 Teilnehmer</h4>
             </div>
           </div>
-          <div class="row flex-nowrap">
+          <div class="row flex-nowrap icon-row">
             <div class="col-4" align="right">
               <span class="fa-stack">
                 <i class="fas fa-circle fa-stack-2x text-primary"></i>
@@ -317,7 +159,7 @@
               <h4 class="icon"><b>Webinar</b><br>Online-Kurs über Zoom</h4>
             </div>
           </div>
-          <div class="row flex-nowrap">
+          <div class="row flex-nowrap icon-row">
             <div class="col-4" align="right">
               <span class="fa-stack">
                 <i class="fas fa-circle fa-stack-2x text-primary"></i>
@@ -330,7 +172,7 @@
           </div>
         </div>
         <div class="col-md-6">
-          <div class="row flex-nowrap">
+          <div class="row flex-nowrap icon-row">
             <div class="col-4" align="right">
               <span class="fa-stack">
                 <i class="fas fa-circle fa-stack-2x text-primary"></i>
@@ -341,7 +183,7 @@
               <h4 class="icon"><b>2-Tage</b><br>von 9 bis 18Uhr</h4>
             </div>
           </div>
-          <div class="row flex-nowrap">
+          <div class="row flex-nowrap icon-row">
             <div class="col-4" align="right">
               <span class="fa-stack">
                 <i class="fas fa-circle fa-stack-2x text-primary"></i>
@@ -352,7 +194,7 @@
               <h4 class="icon"><b>990 CHF</b><br>für Kurs und offene Materialien</h4>
             </div>
           </div>
-          <div class="row flex-nowrap">
+          <div class="row flex-nowrap icon-row">
             <div class="col-4" align="right">
               <span class="fa-stack">
                 <i class="fas fa-circle fa-stack-2x text-primary"></i>
@@ -367,8 +209,6 @@
       </div>
     </div>
   </section>
-
-
 
 
   <!-- Services -->
@@ -386,16 +226,18 @@
           </div>
           <div  class="row flex-nowrap">
             <div class="col-md-3 schedule schedule-times">0930</div>
-            <div class="col-md-9 schedule schedule-session" style="height:3.4em">
+
+            <div class="col-md-9 schedule schedule-session" style="height:3.4em;">
               Was ist ML?
               <p class="schedule-detail">Grundbegriffe &bull; Anwendungsgebiete</p>
             </div>
           </div>
           <div  class="row flex-nowrap">
             <div class="col-md-3 schedule schedule-times">1030</div>
-            <div class="col-md-9 schedule schedule-session" style="height:5.1em;">
-              Fitting<br>
-              <span class="schedule-detail">Loss-Funktionen &bull; Lineares Modell &bull; Regression &bull; Klassifikation</p>
+            <div class="col-md-9 schedule schedule-session" style="height:5.1em">
+              Fitting
+              <p class="schedule-detail">Loss-Funktionen &bull; Lineares Modell</p>
+              <p class="schedule-detail">Regression &bull; Klassifikation</p>
             </div>
           </div>
           <div  class="row flex-nowrap">
@@ -406,19 +248,26 @@
             <div class="col-md-3 schedule schedule-times">1300</div>
             <div class="col-md-9 schedule schedule-session" style="height:3.4em;">
               Fitting<br>
-              <span class="schedule-detail">Fitting in <pckg class="text-muted">caret</pckg></span>
+              <p class="schedule-detail">Übungen mit <pckg class="text-muted">caret</pckg></p>
             </div>
           </div>
           <div  class="row flex-nowrap">
             <div class="col-md-3 schedule schedule-times">1400</div>
             <div class="col-md-9 schedule schedule-session" style="height:5.95em;">
               Vorhersage<br>
-              <span class="schedule-detail">Decision Trees &bull; Random forests &bull; Overfitting &bull; Hold-out Daten</span>
+              <p class="schedule-detail">Random Forest &bull; Decision Tree</p>
+              <p class="schedule-detail">Overfitting &bull; Hold-out Daten</p>
+              <p class="schedule-detail">Übungen mit <pckg class="text-muted">caret</pckg></p>
             </div>
           </div>
           <div  class="row flex-nowrap">
             <div class="col-md-3 schedule schedule-times">1600</div>
-            <div class="col-md-9 schedule schedule-session" style="height:5.95em;">Optimisierung</div>
+            <div class="col-md-9 schedule schedule-session" style="height:5.95em;">
+              Optimisierung
+              <p class="schedule-detail">Parameter-tuning</p>
+              <p class="schedule-detail">Bootstrap &bull; Cross-validation</p>
+              <p class="schedule-detail">Übungen mit <pckg class="text-muted">caret</pckg></p>
+            </div>
           </div>
           <div  class="row flex-nowrap">
             <div class="col-md-3 schedule schedule-times">1755</div>
@@ -436,7 +285,12 @@
           </div>
           <div  class="row flex-nowrap">
             <div class="col-md-3 schedule schedule-times">0945</div>
-            <div class="col-md-9 schedule schedule-session" style="height:7.65em;">Unüberwachtes Lernen</div>
+            <div class="col-md-9 schedule schedule-session" style="height:7.65em;">
+              Unüberwachtes Lernen
+              <p class="schedule-detail">Clustering &bull; Dimensionsreduktion</p>
+              <p class="schedule-detail"><i>k</i>-means/selection &bull; Gaussian-mixtures</p>
+              <p class="schedule-detail">Übungen mit <pckg class="text-muted">stats</pckg>, <pckg class="text-muted">cstab</pckg>, <pckg class="text-muted">mclust</pckg>, etc.</p>
+            </div>
           </div>
           <div  class="row flex-nowrap">
             <div class="col-md-3 schedule schedule-times">1200</div>
@@ -444,11 +298,23 @@
           </div>
           <div  class="row flex-nowrap">
             <div class="col-md-3 schedule schedule-times">1300</div>
-            <div class="col-md-9 schedule schedule-session" style="height:7.65em;">Features</div>
+            <div class="col-md-9 schedule schedule-session" style="height:7.65em;">
+              Features
+              <p class="schedule-detail">Feature Selektion</p>
+              <p class="schedule-detail">Skalierung &bull; Transformation</p>
+              <p class="schedule-detail">Dimensionsreduktion</p>
+              <p class="schedule-detail">Features mit <pckg class="text-muted">caret</pckg></p>
+            </div>
           </div>
           <div  class="row flex-nowrap">
             <div class="col-md-3 schedule schedule-times">1515</div>
-            <div class="col-md-9 schedule schedule-session" style="height:7.65em;">Modelle</div>
+            <div class="col-md-9 schedule schedule-session" style="height:7.65em;">
+              Modelle
+              <p class="schedule-detail">No-free lunch &bull; Bias-Variance dilemma</p>
+              <p class="schedule-detail">Bagging &bull; Boosting</p>
+              <p class="schedule-detail">Kernel trick &bull; Deep learning</p>
+              <p class="schedule-detail">Übungen mit <pckg class="text-muted">caret</pckg></p>
+            </div>
           </div>
           <div  class="row flex-nowrap">
             <div class="col-md-3 schedule schedule-times">1730</div>
@@ -462,25 +328,24 @@
 
   <!-- Services -->
   <section class="page-section bg-light" id="slides">
-      <div id="myCarousel" class="carousel slide container" data-ride="carousel">
-          <ol class="carousel-indicators" style="bottom:-50px">
-              <li data-target="#myCarousel" data-slide-to="0" class="active" style="background-color:#6c757d"></li>
+      <div id="myCarousel" class="carousel slide container" data-interval="false">
+          <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active" style="background-color:#6c757d">test</li>
               <li data-target="#myCarousel" data-slide-to="1" style="background-color:#6c757d"></li>
           </ol>
           <div class="carousel-inner col-lg-12 text-center" style="padding-bottom:100px;font-size:1em">
-             <h2 class="section-heading text-uppercase" style="margin-bottom:40px">Theoretische Grundlagen</h2>
              <div class="carousel-item active">
                <div class="row">
-                 <div class="col-md-9">
-                   Klicke auf die Folien. Verwende dann <b>&larr;</b> und <b>&rarr;</b>.<br>
+                 <div class="col-lg-9">
+                   <span class="slide-instruct">Klicke auf die Folien. Verwende dann <b>&larr;</b> und <b>&rarr;</b>.</span><br>
                    <div class="slides">
                    <iframe src="https://therbootcamp.github.io/ML_2020Apr/_sessions/WhatIsML/WhatIsML.html"></iframe>
                  </div>
                  </div>
-                 <div class="col-md-3">
-                   <p><br>
+                 <div class="col-lg-3">
+                   <p class="content">
                      <h4 align="left">Konzepte</h4>
-                     <ol class="concepts text-muted" align="left">
+                     <ol class="concepts" align="left">
                        <li>Maschinelles Lernen versus Statistik</li>
                        <li>Algorithmen versus Intuition</li>
                        <li>Arten des maschinellen Lernens</li>
@@ -492,16 +357,16 @@
              </div>
               <div class="carousel-item">
                 <div class="row">
-                  <div class="col-md-9">
-                    Klicke auf die Folien. Verwende dann <b>&larr;</b> und <b>&rarr;</b>.<br>
+                  <div class="col-lg-9">
+                    <span class="slide-instruct">Klicke auf die Folien. Verwende dann <b>&larr;</b> und <b>&rarr;</b>.</span><br>
                     <div class="slides">
                     <iframe src="https://therbootcamp.github.io/ML_2020Apr/_sessions/Fitting/Fitting.html"></iframe>
                   </div>
                   </div>
-                  <div class="col-md-3">
-                    <p><br>
+                  <div class="col-lg-3">
+                    <p class="content">
                       <h4 align="left">Konzepte</h4>
-                      <ol class="concepts text-muted" align="left">
+                      <ol class="concepts" align="left">
                         <li>Maschinelles Lernen versus Statistik</li>
                         <li>Algorithmen versus Intuition</li>
                         <li>Arten des maschinellen Lernens</li>
@@ -513,38 +378,29 @@
               </div>
             </div>
           </div>
-
-          <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
-              <!---<span class="carousel-control-prev-icon"></span>--->
-          </a>
-          <a class="carousel-control-next" href="#myCarousel" data-slide="next">
-              <!---<span class="carousel-control-next-icon"></span>--->
-          </a>
-
       </div>
     </section>
 
     <!-- Services -->
     <section class="page-section" id="practicals">
-        <div id="myCarousel2" class="carousel slide container" data-ride="carousel">
-            <ol class="carousel-indicators" style="bottom:-50px">
-                <li data-target="#myCarousel2" data-slide-to="0" class="active" style="background-color:#6c757d"></li>
-                <li data-target="#myCarousel2" data-slide-to="1" style="background-color:#6c757d"></li>
+        <div id="myCarousel2" class="carousel slide container" data-interval="false">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel2" data-slide-to="0" class="active" style="background-color:#6c757d">Fitting</li>
+                <li data-target="#myCarousel2" data-slide-to="1" style="background-color:#6c757d">Prediction</li>
             </ol>
             <div class="carousel-inner col-lg-12 text-center" style="padding-bottom:100px;font-size:1em">
-               <h2 class="section-heading text-uppercase" style="margin-bottom:40px">Praktische Übungen</h2>
                <div class="carousel-item active">
                  <div class="row">
-                   <div class="col-md-9">
-                     Klicke auf die Folien. Verwende dann <b>&larr;</b> und <b>&rarr;</b>.<br>
+                   <div class="col-lg-9">
+                     <span class="slide-instruct">Klicke auf die Folien. Verwende dann <b>&larr;</b> und <b>&rarr;</b>.</span><br>
                      <div class="slides">
                      <iframe src="https://therbootcamp.github.io/ML_2020Apr/_sessions/Fitting/Fitting_practical.html"></iframe>
                    </div>
                    </div>
-                   <div class="col-md-3">
-                     <p><br>
+                   <div class="col-lg-3">
+                     <p class="content">
                        <h4 align="left">Konzepte</h4>
-                       <ol class="concepts text-muted" align="left">
+                       <ol class="concepts" align="left">
                          <li>Maschinelles Lernen versus Statistik</li>
                          <li>Algorithmen versus Intuition</li>
                          <li>Arten des maschinellen Lernens</li>
@@ -556,14 +412,14 @@
                </div>
                 <div class="carousel-item">
                   <div class="row">
-                    <div class="col-md-9">
-                      Klicke auf die Seite. Verwende dann <b>&uarr;</b> und <b>&darr;</b>.<br>
+                    <div class="col-lg-9">
+                      <span class="slide-instruct">Klicke auf die Seite. Verwende dann <b>&uarr;</b> und <b>&darr;</b>.</span><br>
                       <div class="slides">
                       <iframe src="https://therbootcamp.github.io/ML_2020Apr/_sessions/Prediction/Prediction_practical.html"></iframe>
                     </div>
                     </div>
-                    <div class="col-md-3">
-                      <p><br>
+                    <div class="col-lg-3">
+                      <p class="content">
                         <h4 align="left">Konzepte</h4>
                         <ol class="concepts text-muted" align="left">
                           <li>Maschinelles Lernen versus Statistik</li>
@@ -576,15 +432,7 @@
                   </div>
                 </div>
             </div>
-
-            <a class="carousel-control-prev" href="#myCarousel2" data-slide="prev">
-                <!---<span class="carousel-control-prev-icon"></span>--->
-            </a>
-            <a class="carousel-control-next" href="#myCarousel2" data-slide="next">
-                <!---<span class="carousel-control-next-icon"></span>--->
-            </a>
-
-        </div>
+          </div>
       </section>
 
   <!-- Contact --->
@@ -646,7 +494,7 @@
     <div class="container">
       <div class="row align-items-center">
         <div class="col-md-4">
-          <span class="copyright">Copyright &copy; The R Bootcamp 2019</span>
+          <span class="copyright">Copyright &copy; The R Bootcamp 2020</span>
         </div>
         <div class="col-md-4">
           <ul class="list-inline social-buttons">
