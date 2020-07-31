@@ -133,7 +133,7 @@
   }
 
 .fa-stack {
-  font-size: 2em;
+  font-size: 2rem;
   }
 
 @media (min-width: 576px){
@@ -167,31 +167,31 @@
 }
 
 .schedule-times {
-  font-size:1em;
+  font-size:,8em;
   font-weight:100;
   text-align: right;
   color: black;
   }
 
 .schedule-head {
-  font-size:1.4em;
+  font-size:1em;
   font-weight:900;
   color: black;
   }
 
 .schedule-content {
-  font-size:1.4em;
+  font-size:1em;
   font-weight:100;
   background-color: #f39cac;
   }
 
 .schedule-break {
-  font-size:1.4em;
+  font-size:1em;
   font-weight:100;
   background-color: #bfbfbf;
   }
 .schedule-session {
-  font-size:1.4em;
+  font-size:1em;
   font-weight:900;
   background-color: #EA4B68;
   overflow: hidden;
@@ -199,15 +199,19 @@
 
 .schedule-detail {
   font-weight: 100;
-  font-size: 1rem;
+  font-size: .8rem;
   overflow: hidden;
   white-space: nowrap;
   text-overflow:ellipsis;
   margin: 0px 0px 0px 0px;
 }
 
-@media (min-width: 0px){}
-@media (min-width: 576px){}
+@media (min-width: 576px){
+  .schedule-head, .schedule-content, .schedule-break, .schedule-session {
+    font-size: 1.4em;
+    }
+  .schedule-detail, .schedule-times {font-size: 1rem;}
+  }
 @media (min-width: 768px){}
 @media (min-width: 992px){
   .schedule-head {font-size: 2em;}
