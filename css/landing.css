@@ -31,16 +31,16 @@
 
 .webinar-tag h1{
   font-weight: 100;
-  font-size: 1.4em;
+  font-size: 1em;
 }
 
 .course-title {
-  font-size:4rem;
+  font-size:2.5rem;
   padding: 4% 0%;
   }
 
 .usp {
-  font-size: 1.4rem;
+  font-size: 1rem;
   color: white;
   text-align: left;
   font-weight:100;
@@ -55,7 +55,13 @@
   }
 
 
-@media (min-width: 576px){}
+@media (min-width: 576px){
+  .course-title {font-size: 4rem;}
+  .usp {
+    font-size: 1.4rem;
+    padding-left: 0px;
+    }
+  }
 @media (min-width: 768px){
   .course-title {font-size: 5rem;}
   }
@@ -257,18 +263,22 @@ iframe{
     width: 1.2rem;
     height: 1.2rem;
     border-radius: 100%;
-    font-size: 1rem;
+    font-size: 0rem;
     text-indent: 1.4rem;
-    transform:rotate(30deg);
-    margin:0px 20px;
+    transform:rotate(45deg);
+    margin:0px 10px;
     line-height: 1.2rem;
     white-space: nowrap;
-    font-weight: 0;
+
   }
 li.active {
-    font-weight: 900;
+    font-weight: 100;
+    font-size:1.2rem;
   }
 
+.carousel-indicators li:hover {
+    font-size:1.2rem;
+}
 
 @media (min-width: 576px){}
 @media (min-width: 768px){
