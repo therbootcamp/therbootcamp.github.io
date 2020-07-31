@@ -259,10 +259,11 @@ iframe{
     border-radius: 100%;
     font-size: 1rem;
     text-indent: 1.4rem;
-    transform:rotate(90deg);
-    margin:0px 10px;
+    transform:rotate(30deg);
+    margin:0px 20px;
     line-height: 1.2rem;
     white-space: nowrap;
+    font-weight: 0;
   }
 li.active {
     font-weight: 900;
