@@ -249,19 +249,25 @@ iframe{
   padding: 0px 0px;
   }
 
-  .carousel-indicators li {
-    width: 14px;
-    height: 14px;
-    border-radius: 0%;
-    font-size:1.4rem;
-    color: black;
-    text-indent: 6px;
-    transform:rotate(30deg);
-    margin:0px 30px;
+.carousel-indicaators {
+  top: 0px;
+}
+
+.carousel-indicators li {
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 100%;
+    font-size: 1rem;
+    text-indent: 1.4rem;
+    transform:rotate(90deg);
+    margin:0px 10px;
+    line-height: 1.2rem;
+    white-space: nowrap;
   }
 li.active {
     font-weight: 900;
   }
+
 
 @media (min-width: 576px){}
 @media (min-width: 768px){
