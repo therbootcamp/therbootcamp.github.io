@@ -9,7 +9,7 @@
   color:white;
   border-radius:6px;
   vertical-align: middle;
-  margin:8px;
+  margin: 8px;
   display:inline-block;
   }
 
@@ -36,7 +36,7 @@
 
 .course-title {
   font-size:2.5rem;
-  padding: 4% 0%;
+  padding: 0% 0% 0% 0%;
   }
 
 .usp {
@@ -46,7 +46,6 @@
   font-weight:100;
   padding-bottom: 10px;
   overflow-wrap: normal;
-  padding-left:16px;
   }
 
 .bullet {
@@ -54,14 +53,11 @@
   height: 32px;
   }
 
+.btn-primary {font-size: 1rem;}
 
 @media (min-width: 576px){
-  .course-title {font-size: 4rem;}
-  .usp {
-    font-size: 1.4rem;
-    padding-left: 0px;
-    }
   .webinar-tag {
+    font-size: 1.4rem;
     width: 140px;
     height: 52px;
     padding: 14px 8px 8px 30px;
@@ -71,20 +67,21 @@
     height: 60px;
     padding: 6px 0px 6px 0px;
     }
+  .course-title {font-size: 4rem;}
+  .usp {font-size: 1.4rem;}
   .bullet {
     width: 40px;
     height: 40px;
     }
+  .btn-primary {font-size: 1.4rem;}
   }
 @media (min-width: 768px){
   .course-title {font-size: 5rem;}
+  .usp {padding-left: 0px;}
+  .btn-primary {font-size: 1.8rem;}
   }
 @media (min-width: 992px){
-  .course-title {font-size: 6rem;}
-  .usp {
-    font-size: 1.8rem;
-    padding-left: 0px;
-    }
+  .masthead .container {padding-top: 200px;}
   .webinar-tag {
     width: 200px;
     height: 69px;
@@ -96,8 +93,10 @@
     padding: 6px 10px 6px 0px;
     }
   .webinar-tag h1 {font-size:1.8em}
-  .bullet {width:48px;height:48px}
-  .masthead .container {padding-top: 200px;}
+  .course-title {font-size: 6rem;}
+  .usp {font-size: 1.8rem;}
+  .bullet {width:48px; height:48px}
+  .btn-primary {font-size: 1.8rem;}
   }
 @media (min-width: 1200px){
   .unibas-tag {
@@ -110,9 +109,10 @@
     height: 87px;
     padding: 18px 8px 4px 30px;
     }
-  .webinar-tag h1 {font-size:2.4em}
+  .webinar-tag h1 {font-size:2.4rem}
   .course-title {font-size: 8rem;}
-  .usp {font-size: 2.4rem;}
+  .usp, .date {font-size: 3.2rem;}
+  .btn-primary {font-size: 2.4rem;}
   }
 
 
@@ -283,25 +283,22 @@ iframe{
 }
 
 .carousel-indicators li {
-    width: 1.2rem;
-    height: 1.2rem;
+    width: 1rem;
+    height: 1rem;
     border-radius: 100%;
     font-size: 0rem;
     text-indent: 1.4rem;
     transform:rotate(45deg);
-    margin:0px 8px;
+    margin:0px 6px;
     line-height: 1.2rem;
     white-space: nowrap;
-
-  }
-li.active {
-    font-weight: 100;
-    font-size:1.2rem;
   }
 
 .carousel-indicators li:hover {
-    font-size:1.2rem;
-}
+    display: inline-block;
+    font-size:1rem;
+    align:center;
+  }
 
 @media (min-width: 576px){
   .concepts li {
