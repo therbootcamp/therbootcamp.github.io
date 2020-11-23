@@ -8,21 +8,24 @@
     //var expl_link = "mailto:therbootcamp@gmail.com?subject=Voranmeldug für Explorative Datenanalyse mit R&amp;body=Ich möchte mich für das nächste R Bootcamp 'Explorative Datenanalyse mit R' voranmelden."
     //DE | tba | Voranmelden<p style='border-top: 1px solid #6c757d;margin-top:4px;margin-bottom:-2px'>Online Kurs</p>
     //mailto:therbootcamp@gmail.com?subject=Voranmeldug für Reporting mit R&amp;body=Ich möchte mich für das nächste R Bootcamp 'Reporting mit R' voranmelden.
-    var i2r_text = "DE | tba | Anmelden<p style='border-top: 1px solid #6c757d;margin-top:4px;margin-bottom:-2px'>Online Kurs</p>";
+    var i2r_text = "DE | Feb 19 | Anmelden<p style='border-top: 1px solid #6c757d;margin-top:4px;margin-bottom:-2px'>Online Kurs</p>";
     var i2r_link = "https://advancedstudies.unibas.ch/studienangebot/kurs/einfuehrung-in-die-moderne-datenanalyse-mit-r-272005#collapsible-heading-anmeldung"
-    var i2r_font = "lighter"; //lighter
-    var expl_text = "DE | tba | Anmelden<p style='border-top: 1px solid #6c757d;margin-top:4px;margin-bottom:-2px'>Online Kurs</p>";
+    var i2r_font = "bolder"; //lighter
+    var i2r_2nd_text = "DE | Apr 2 | Anmelden<p style='border-top: 1px solid #6c757d;margin-top:4px;margin-bottom:-2px'>Online Kurs</p>";
+    var i2r_2nd_link = "mailto:therbootcamp@gmail.com?subject=Voranmeldug für Einführung in die moderne Datenanalyse mit R&amp;body=Ich [NAME, ADRESSE] möchte mich für das nächste R Bootcamp 'Einführung in die moderne Datenanalyse mit R' am 2. April, 2021, anmelden."
+    var i2r_2nd_font = "bolder"; //lighter
+    var expl_text = "DE | Mar 19/20 | Anmelden<p style='border-top: 1px solid #6c757d;margin-top:4px;margin-bottom:-2px'>Online Kurs</p>";
     var expl_link = "https://advancedstudies.unibas.ch/studienangebot/kurs/explorative-datenanalyse-mit-r-272006#collapsible-heading-anmeldung"
-    var expl_font = "lighter";
-    var stat_text = "DE | tba | Anmelden<p style='border-top: 1px solid #6c757d;margin-top:4px;margin-bottom:-2px'>Online Kurs</p>";
+    var expl_font = "bolder";
+    var stat_text = "DE | Apr 16/17 | Anmelden<p style='border-top: 1px solid #6c757d;margin-top:4px;margin-bottom:-2px'>Online Kurs</p>";
     var stat_link = "https://advancedstudies.unibas.ch/studienangebot/kurs/statistik-mit-r-233189#collapsible-heading-anmeldung"
-    var stat_font = "lighter";
-    var ml_text = "DE | Okt tba | Anmelden<p style='border-top: 1px solid #6c757d;margin-top:4px;margin-bottom:-2px'>Online Kurs</p>";
+    var stat_font = "bolder";
+    var ml_text = "DE | Mai 19/20 | Anmelden<p style='border-top: 1px solid #6c757d;margin-top:4px;margin-bottom:-2px'>Online Kurs</p>";
     var ml_link = "https://advancedstudies.unibas.ch/studienangebot/kurs/maschinelles-lernen-mit-r-272008#collapsible-heading-anmeldung"
-    var ml_font = "lighter";
-    var rep_text = "DE | tba | Anmelden<p style='border-top: 1px solid #6c757d;margin-top:4px;margin-bottom:-2px'>Online Kurs</p>";
+    var ml_font = "bolder";
+    var rep_text = "DE | Feb 26/27 | Anmelden<p style='border-top: 1px solid #6c757d;margin-top:4px;margin-bottom:-2px'>Online Kurs</p>";
     var rep_link = "https://advancedstudies.unibas.ch/studienangebot/kurs/reporting-with-r-webinar-283873#collapsible-heading-anmeldung"
-    var rep_font = "lighter";
+    var rep_font = "bolder";
 
     // running link
     var run_link = "https://therbootcamp.github.io/RmR_2020Jun/"
@@ -221,6 +224,7 @@
                 </a>
                 <div class="timeline-dates">
                   <a class="date" id="i2r"></a><br>
+                  <a class="date" id="i2r_no2"></a><br>
                 </div>
               </div>
             </li>
@@ -233,7 +237,7 @@
               <div class="timeline-panel">
                 <div class="timeline-heading">
                   <h4>Explorative Datenanalyse mit R</h4>
-                  <p class="text-muted" style="margin-bottom:2px;font-size:1.2em">990CHF @ Uni Basel</p>
+                  <p class="text-muted" style="margin-bottom:2px;font-size:1.2em">790CHF @ Uni Basel</p>
                 </div>
                 <div class="timeline-body">
                   <a class="course-link" data-toggle="modal" href="#R4DS">
@@ -261,7 +265,7 @@
               <div class="timeline-panel">
                 <div class="timeline-heading">
                   <h4>Statistik mit R</h4>
-                  <p class="text-muted" style="margin-bottom:2px;font-size:1.2em">990CHF @ Uni Basel</p>
+                  <p class="text-muted" style="margin-bottom:2px;font-size:1.2em">790CHF @ Uni Basel</p>
                 </div>
                 <div class="timeline-body">
                   <a class="course-link" data-toggle="modal" href="#SwR">
@@ -287,7 +291,7 @@
               <div class="timeline-panel">
                 <div class="timeline-heading">
                   <h4>Maschinelles Lernen mit R</h4>
-                  <p class="text-muted" style="margin-bottom:2px;font-size:1.2em">990CHF @ Uni Basel</p>
+                  <p class="text-muted" style="margin-bottom:2px;font-size:1.2em">790CHF @ Uni Basel</p>
                 <div class="timeline-body">
                   <a class="course-link" data-toggle="modal" href="#MLwR">
                   <div class="course-hover">
@@ -312,7 +316,7 @@
               <div class="timeline-panel">
                 <div class="timeline-heading">
                   <h4>Reporting mit R</h4>
-                  <p class="text-muted" style="margin-bottom:2px;font-size:1.2em">990CHF @ Uni Basel</p>
+                  <p class="text-muted" style="margin-bottom:2px;font-size:1.2em">790CHF @ Uni Basel</p>
                 </div>
                 <div class="timeline-body">
                   <a class="course-link" data-toggle="modal" href="#RwR">
@@ -1013,7 +1017,7 @@
                   </tr>
                   <tr>
                     <td class="elem">Preis</td>
-                    <td>990.- CHF</td>
+                    <td>790.- CHF</td>
                   </tr>
                 </table>
                 <p class="head">Aufbau</p>
@@ -1133,7 +1137,7 @@
                   </tr>
                   <tr>
                     <td class="elem">Preis</td>
-                    <td>990.- CHF</td>
+                    <td>790.- CHF</td>
                   </tr>
                 </table>
 
@@ -1259,7 +1263,7 @@
                   </tr>
                   <tr>
                     <td class="elem">Preis</td>
-                    <td>990.- CHF</td>
+                    <td>790.- CHF</td>
                   </tr>
                 </table>
 
@@ -1372,7 +1376,7 @@
                   </tr>
                   <tr>
                     <td class="elem">Preis</td>
-                    <td>990.- CHF</td>
+                    <td>790.- CHF</td>
                   </tr>
                 </table>
 
@@ -2008,6 +2012,10 @@
     i2r.innerHTML = i2r2.innerHTML = i2r_text;
     i2r.href = i2r2.href = i2r_link;
     i2r.style.fontWeight = i2r2.style.fontWeight = i2r_font;
+    var ir_no2 = document.getElementById("i2r_no2");
+    i2r.innerHTML = i2r_no2_text;
+    i2r.href = i2r_no2_link;
+    i2r.style.fontWeight = i2r_no2_font;
     var expl = document.getElementById("expl");
     var expl2 = document.getElementById("expl2");
     expl.innerHTML = expl2.innerHTML = expl_text;
